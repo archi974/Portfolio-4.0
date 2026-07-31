@@ -26,10 +26,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <PageTransition>
-      <h1 className="sr-only">
-        Léa Marchand, Product Designer specialized in UX/UI and front-end development
-      </h1>
       <Hero />
+
       <ServicesSection />
       <FeaturedProjects />
       <ContactCta />
