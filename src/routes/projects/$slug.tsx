@@ -6,9 +6,10 @@ import { GlowCard } from "@/components/ui-kit/glow-card";
 import { Tag } from "@/components/ui-kit/tag";
 import { getNextProject, getProject } from "@/lib/projects";
 import { person } from "@/data/navigation";
+import type { Project } from "@/types/project";
 
 export const Route = createFileRoute("/projects/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { project: Project; next: Project | undefined } => {
     const project = getProject(params.slug);
     if (!project || project.status !== "published") throw notFound();
     return { project, next: getNextProject(params.slug) };
