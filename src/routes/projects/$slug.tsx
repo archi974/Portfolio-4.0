@@ -117,7 +117,7 @@ function CaseStudyPage() {
               ))}
             </ul>
 
-            <div className="mt-12 overflow-hidden rounded-3xl border border-border shadow-lift">
+            <div className="mt-12 aspect-16/9 overflow-hidden rounded-3xl border border-border shadow-lift">
               <img
                 src={project.cover}
                 alt={project.coverAlt}
