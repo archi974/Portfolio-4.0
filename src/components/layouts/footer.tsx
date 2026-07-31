@@ -10,7 +10,7 @@ export function Footer() {
         <div className="max-w-sm">
           <p className="font-display text-lg font-semibold">{person.name}</p>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-            {person.role} — based in {person.location}, working with product teams remotely.
+            {person.role} — basé à {person.location}, spécialisé en UX/UI et développement Front-end.
           </p>
         </div>
 

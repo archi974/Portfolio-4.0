@@ -2,107 +2,147 @@ import type { CaseStudy } from "@/types/project";
 
 export const eventoriasCase: CaseStudy = {
   overview: [
-    { label: "Role", value: "UX Research, UI Design, Prototyping" },
-    { label: "Timeline", value: "10 weeks, 2024" },
-    { label: "Team", value: "Me, one developer, one founder" },
-    { label: "Platform", value: "iOS & Android" },
+    { label: "Mon rôle", value: "Recherche utilisateur, UX/UI Design, Prototypage" },
+    { label: "Durée", value: "Environ 8 semaines" },
+    { label: "Contexte", value: "Projet de formation OpenClassrooms" },
+    { label: "Plateforme", value: "Application mobile (iOS & Android)" },
   ],
   sections: [
     {
       id: "context",
-      title: "Context",
+      title: "Contexte",
       body: [
-        "Eventorias is a small event discovery app for people who moved to a new city and want to find things to do that are actually near them. The founder had a working no-code prototype and around two hundred beta users, but retention after the first week was low.",
-        "I joined for a discovery and redesign cycle before the team committed to a native build.",
+        "Eventorias est un projet réalisé dans le cadre de ma formation Product Designer chez OpenClassrooms. L'objectif était de concevoir une application mobile permettant de découvrir, créer et partager des événements locaux tout en répondant aux besoins des visiteurs et des organisateurs.",
+        "Le projet couvrait l'ensemble de la démarche de conception, depuis la recherche et la veille jusqu'au prototype fonctionnel et à la préparation de la passation aux développeurs.",
       ],
     },
     {
       id: "problem",
-      title: "Problem",
+      title: "Problématique",
       body: [
-        "The app showed everything happening in a 40 km radius, sorted by date. Users opened it, scrolled a long undifferentiated list, and closed it. The founder read this as a content problem; the analytics suggested a filtering and trust problem instead.",
+        "Comment concevoir une expérience simple et intuitive permettant aux utilisateurs de trouver rapidement des événements correspondant à leurs attentes, tout en offrant aux organisateurs des outils efficaces pour créer, modifier et gérer leurs événements ?",
       ],
     },
     {
       id: "role",
-      title: "My role",
+      title: "Mon rôle",
       body: [
-        "I owned research, information architecture, UI design and the interactive prototype. The developer and I paired on the component structure so the design system could be implemented directly.",
+        "J'ai réalisé l'ensemble du projet : veille concurrentielle, benchmark, recherche utilisateur, définition des besoins, conception UX, création des maquettes UI, prototypage interactif, tests utilisateurs et préparation de la documentation de passation destinée aux développeurs.",
       ],
     },
     {
       id: "research",
-      title: "Research",
+      title: "Recherche utilisateur",
       body: [
-        "Nine interviews with beta users, a two-week diary study with four of them, and a competitive review of five event apps. I also read three months of support messages.",
+        "Le projet s'est appuyé sur une phase de recherche comprenant un benchmark de solutions existantes, la définition de personas, l'analyse des parcours utilisateurs et des tests utilisateurs réalisés sur le prototype afin d'identifier les principaux points d'amélioration.",
       ],
       list: [
-        "9 semi-structured interviews (45 min)",
-        "Diary study, 4 participants, 14 days",
-        "Benchmark of 5 comparable products",
-        "Analysis of 130 support messages",
+        "Benchmark de plusieurs applications d'événements",
+        "Création de personas",
+        "Analyse des parcours utilisateurs",
+        "Tests utilisateurs sur prototype",
+        "Synthèse des retours utilisateurs",
       ],
     },
     {
       id: "insights",
-      title: "Insights",
+      title: "Enseignements",
       body: [
-        "Three findings changed the direction of the project:",
+        "Les recherches et les tests ont mis en évidence plusieurs attentes récurrentes des utilisateurs :",
       ],
       list: [
-        "People decide by mood and moment (\"tonight, nearby, cheap\"), not by category.",
-        "Distance mattered more than any other filter — anything above 20 minutes travel was mentally discarded.",
-        "Without a photo and a named organiser, an event was assumed to be low quality and skipped.",
+        "Pouvoir trouver rapidement un événement adapté à leurs centres d'intérêt.",
+        "Disposer de filtres simples et efficaces pour affiner les résultats.",
+        "Accéder facilement aux informations essentielles d'un événement (date, lieu, budget, langue...).",
+        "Permettre aux organisateurs de gérer leurs événements sans complexité.",
       ],
     },
     {
       id: "process",
-      title: "Process",
+      title: "Processus de conception",
       body: [
-        "I reframed the home screen around three intent-based entries — Tonight, This weekend, Near me — and moved the chronological list one level down. Two rounds of wireframes, then a mid-fidelity prototype tested with six people.",
+        "À partir des besoins identifiés, j'ai conçu les parcours utilisateurs, réalisé plusieurs itérations de wireframes, puis développé les interfaces haute fidélité dans Figma. Un prototype interactif a ensuite été testé afin de valider les principaux parcours avant la phase de passation.",
       ],
     },
     {
       id: "wireframes",
-      title: "Wireframes & iterations",
+      title: "Wireframes & itérations",
       body: [
-        "The first version used a map as the default view. Testing showed people found it heavy and hard to scan on the move, so the map became a toggle instead of the entry point.",
-        "The second iteration introduced a compact event card carrying photo, organiser, distance and price — the four attributes people used to decide.",
+        "Les différentes itérations ont permis d'améliorer progressivement la navigation, les filtres de recherche, les fiches événements ainsi que les parcours dédiés aux organisateurs. Les retours des tests utilisateurs ont servi à ajuster l'ergonomie et la hiérarchie des informations.",
       ],
     },
     {
       id: "design-system",
-      title: "Design system",
+      title: "Design System",
       body: [
-        "A small system: 4 type sizes, an 8 pt spacing scale, two card densities and a documented set of states. Every color pair was checked for WCAG AA before it entered the library.",
+        "J'ai construit un Design System regroupant les couleurs, la typographie, les composants, les espacements et les règles d'utilisation afin de garantir une interface cohérente et facilement exploitable lors du développement.",
       ],
     },
     {
       id: "solution",
-      title: "Final solution",
+      title: "Solution finale",
       body: [
-        "The redesigned app opens on intent, shows travel time instead of raw distance, and puts the organiser's name and photo on every card. Saving an event is a single tap and feeds a lightweight weekly digest.",
+        "Le résultat est un prototype mobile permettant de rechercher, consulter, créer et gérer des événements grâce à une interface claire, moderne et centrée sur les besoins des utilisateurs. Le projet est accompagné d'une documentation de passation destinée à faciliter le travail de l'équipe de développement.",
       ],
     },
   ],
   results: [
-    { metric: "+34%", label: "Week-1 retention", note: "Measured on the beta cohort, 6 weeks after release" },
-    { metric: "6/6", label: "Task success", note: "Find an event for tonight under 20 min away" },
-    { metric: "-41%", label: "Time to first save", note: "Prototype test, compared with the previous build" },
+    {
+      metric: "100 %",
+      label: "User stories prioritaires",
+      note: "Fonctionnalités principales intégrées au prototype final",
+
+    },
+    {
+      metric: "10+",
+      label: "Parcours utilisateurs",
+      note: "Visiteur et organisateur couverts par le prototype",
+    },
+    {
+      metric: "1",
+      label: "Prototype interactif",
+      note: "Prototype haute fidélité réalisé sur Figma",
+    },
   ],
+
   learnings: [
-    "I started the project assuming a content problem because that was the brief. The diary study is what corrected it — I should have run it in week one, not week three.",
-    "Testing the map-first version early saved the team from building the most expensive screen in the product.",
-    "Documenting states next to the components removed almost all handover questions.",
+    "Ce projet m'a permis d'approfondir l'ensemble d'un processus de Product Design, de la recherche utilisateur jusqu'à la préparation de la passation aux développeurs.",
+    "Les tests utilisateurs ont confirmé l'importance de simplifier les parcours et de limiter les frictions lors de la recherche d'événements.",
+    "J'ai également appris à mieux documenter mes choix de conception afin de faciliter la collaboration avec les développeurs et d'assurer une implémentation plus fluide.",
   ],
+
   gallery: [
-    { caption: "Intent-based home screen", alt: "Mobile home screen with three intent entries" },
-    { caption: "Event card anatomy", alt: "Breakdown of the event card components" },
-    { caption: "Filter sheet", alt: "Bottom sheet with distance and price filters" },
+    {
+      caption: "Accueil et découverte des événements",
+      alt: "Écran d'accueil de l'application Eventorias",
+    },
+    {
+      caption: "Recherche et filtres",
+      alt: "Interface de recherche avec les différents filtres",
+    },
+    {
+      caption: "Création et gestion d'un événement",
+      alt: "Parcours de création et de gestion d'un événement",
+    },
   ],
+
   resources: [
-    { label: "Research plan (PDF)", href: "#" },
-    { label: "Interactive prototype", href: "#" },
+    {
+      label: "Prototype Figma",
+      href: "https://jv-design-et-tech.github.io/Prototype_event-app/",
+    },
+    {
+      label: "Documentation de passation",
+      href: "https://app.notion.com/p/Eventorias-App-Passation-aux-d-veloppeurs-bcf72a437cfc830abef3811a08281e68",
+    },
+    {
+      label: "Micro-tests",
+      href: "https://app.notion.com/p/Template-Micro-test-d-usage-du-prototype-no-code-f1472a437cfc834da24701c6c6094fee",
+    },
+    {
+      label: "Veille",
+      href: "https://app.notion.com/p/Inspirations-et-veille-5a072a437cfc83cdb00d8124f27a75ac",
+    }
   ],
 };
 

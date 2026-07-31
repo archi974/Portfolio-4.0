@@ -8,51 +8,74 @@ export type TimelineEntry = {
 
 export const experience: TimelineEntry[] = [
   {
-    period: "2025 — Present",
-    title: "Product Designer Student",
+    period: "2025 — Aujourd'hui",
+    title: "Product Designer en formation",
     org: "OpenClassrooms",
     description:
-      "Currently completing a professional Product Design certification focused on UX research, UI design, product strategy and prototyping. Working on end-to-end design projects covering user research, design systems, service design and collaboration with developers.",
-    tags: ["UX Research", "UI Design", "Prototyping"],
+      "Formation professionnelle en Product Design couvrant la recherche utilisateur, le design d'interfaces, la stratégie produit, le prototypage et les tests utilisateurs. Réalisation de projets complets allant de la recherche UX à la conception de prototypes interactifs en collaboration avec des développeurs.",
+    tags: [
+      "Recherche utilisateur",
+      "UI Design",
+      "Prototypage"
+    ],
   },
   {
     period: "2023 — 2025",
-    title: "Freelance Front-end Developer",
-    org: "Self-employed",
+    title: "Développeur Front-end Freelance",
+    org: "Indépendant",
     description:
-      "Designed and developed responsive websites and portfolios for individuals and small businesses. Built React and Next.js interfaces from Figma mockups, optimized web performance and integrated external APIs and Firebase services.",
-    tags: ["React", "Next.js", "TypeScript"],
+      "Conception et développement de sites vitrines et de portfolios pour des particuliers et des petites entreprises. Intégration de maquettes Figma avec React et Next.js, optimisation des performances web et intégration d'API externes ainsi que de services Firebase.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript"
+    ],
   },
   {
     period: "2022 — 2023",
-    title: "Web Developer Certification",
+    title: "Formation Développeur Web",
     org: "OpenClassrooms",
     description:
-      "Completed a professional Web Development certification through seven hands-on projects covering JavaScript, responsive development, application architecture, performance optimization, full-stack development and portfolio creation.",
-    tags: ["JavaScript", "Full-stack", "Performance"],
+      "Obtention du titre professionnel de Développeur Web à travers plusieurs projets couvrant JavaScript, le développement responsive, l'architecture d'applications, l'optimisation des performances, le développement full-stack et la création d'un portfolio professionnel.",
+    tags: [
+      "JavaScript",
+      "Full-stack",
+      "Performance"
+    ],
   },
   {
     period: "2021",
-    title: "Teaching Assistant & Hackathon Participant",
+    title: "Assistant pédagogique & Hackathon",
     org: "Epitech / CDS Group",
     description:
-      "Mentored first and second-year students in HTML, CSS and jQuery while participating in a hackathon focused on improving hotel search experiences through interface design and API integration.",
-    tags: ["Mentoring", "Hackathon", "HTML/CSS"],
+      "Accompagnement d'étudiants de première et deuxième année dans l'apprentissage du HTML, CSS et jQuery. Participation à un hackathon organisé par CDS Group autour de l'amélioration de l'expérience utilisateur d'un moteur de recherche d'hôtels grâce à la conception d'interfaces et à l'intégration d'API.",
+    tags: [
+      "Mentorat",
+      "Hackathon",
+      "HTML/CSS"
+    ],
   },
   {
     period: "2021 — 2022",
-    title: "Web Developer Program",
+    title: "Formation Développeur Web",
     org: "Web@cadémie by Epitech",
     description:
-      "Completed an intensive web development program focused on modern front-end and back-end technologies, strengthening software engineering fundamentals and collaborative development practices.",
-    tags: ["Web Development", "React", "Node.js"],
+      "Formation intensive en développement web permettant d'acquérir de solides bases en développement front-end et back-end, en architecture logicielle et en travail collaboratif sur des projets techniques.",
+    tags: [
+      "Développement Web",
+      "React",
+      "Node.js"
+    ],
   },
   {
     period: "2015 — 2017",
-    title: "Higher National Diploma in Digital Systems",
-    org: "BTS Systèmes Numériques",
+    title: "BTS Systèmes Numériques",
+    org: "Éducation nationale",
     description:
-      "Studied digital systems, software development fundamentals and technical problem-solving, building a strong engineering mindset before specializing in web technologies.",
-    tags: ["Digital Systems", "Programming"],
+      "Formation orientée vers les systèmes numériques, les bases du développement logiciel et la résolution de problématiques techniques, constituant les fondations de mon parcours dans le développement informatique.",
+    tags: [
+      "Systèmes numériques",
+      "Programmation"
+    ],
   },
 ];

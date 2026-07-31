@@ -61,10 +61,10 @@ function AboutPage() {
             <div className="mt-9 flex flex-wrap gap-3">
               <ButtonLink to="/contact">
                 <Mail aria-hidden />
-                Get in touch
+                Entrer en contact
               </ButtonLink>
               <ButtonLink to="/projects" variant="outline">
-                See the work
+                Découvrez mon travail
               </ButtonLink>
             </div>
           </div>

@@ -5,28 +5,40 @@ import coverUnsplash from "@/assets/cover-unsplash.jpg";
 export const developmentProjects: Project[] = [
   {
     slug: "portfolio-website",
-    title: "Portfolio Website",
+    title: "Portfolio personnel",
     category: "development",
-    year: "2025",
-    summary: "This site — designed, typed and shipped end to end.",
+    year: "2026",
+    summary: "Mon portfolio personnel, conçu pour présenter mes projets en Product Design et en développement.",
     description:
-      "A statically rendered portfolio built with React, TanStack Router and TypeScript. Content lives in typed files, motion respects reduced-motion, and every page carries its own metadata.",
-    tags: ["React", "Next.js", "TypeScript", "Accessibility"],
+      "Développement d'un portfolio moderne avec Next.js et TypeScript, mettant en avant mes projets, mes compétences et mon parcours. Le site est conçu autour des bonnes pratiques en matière de performance, d'accessibilité, de SEO et de responsive design.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "SEO",
+      "Accessibilité"
+    ],
     cover: coverPortfolio,
-    coverAlt: "Blank laptop screen in warm light",
+    coverAlt: "Aperçu du portfolio personnel sur ordinateur portable",
     status: "published",
   },
   {
     slug: "unsplash-collection",
     title: "Unsplash Collection",
     category: "development",
-    year: "2024",
-    summary: "A photo collection manager built on a clean architecture.",
+    year: "2026",
+    summary: "Application web permettant de rechercher et d'organiser des collections de photos.",
     description:
-      "Server-rendered gallery with MongoDB persistence, an MVVM presentation layer and a thin API boundary that keeps the domain free of framework code.",
-    tags: ["Next.js", "MongoDB", "Clean Architecture", "MVVM", "API"],
+      "Projet développé avec Next.js et TypeScript mettant en œuvre une architecture propre, une séparation des responsabilités et une API dédiée pour gérer les collections d'images. L'objectif était de créer une application performante, évolutive et facile à maintenir.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "API",
+      "Architecture propre",
+      "MongoDB"
+    ],
     cover: coverUnsplash,
-    coverAlt: "Grid of blank paper tiles in warm tones",
+    coverAlt: "Interface de gestion de collections de photos",
     status: "published",
   },
 ];

@@ -15,32 +15,52 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "UX Research",
+    title: "Recherche utilisateur",
     description:
-      "Talking to people before drawing anything, then turning what I hear into decisions the team can act on.",
+      "Comprendre les besoins des utilisateurs grâce à la recherche terrain afin de concevoir des solutions adaptées et fondées sur des données concrètes.",
     icon: Search,
-    items: ["User interviews", "User testing", "Journey maps", "Personas"],
+    items: [
+      "Entretiens utilisateurs",
+      "Tests utilisateurs",
+      "User Journey Maps",
+      "Personas",
+    ],
   },
   {
     title: "UI Design",
     description:
-      "Interfaces built on a system: consistent, accessible, and handed over in a state developers enjoy.",
+      "Concevoir des interfaces cohérentes, accessibles et évolutives grâce à une approche basée sur les Design Systems.",
     icon: PenTool,
-    items: ["Design systems", "Accessibility", "Figma", "Prototyping"],
+    items: [
+      "Design Systems",
+      "Accessibilité",
+      "Figma",
+      "Prototypage",
+    ],
   },
   {
-    title: "Product Thinking",
+    title: "Stratégie Produit",
     description:
-      "Framing the problem, weighing effort against impact, and keeping the roadmap honest.",
+      "Analyser les besoins utilisateurs et les objectifs business afin de prioriser les fonctionnalités et construire une vision produit claire.",
     icon: Compass,
-    items: ["Roadmaps", "Benchmark", "Strategy", "Prioritization"],
+    items: [
+      "Roadmaps",
+      "Benchmark",
+      "Stratégie",
+      "Priorisation",
+    ],
   },
   {
-    title: "Front-end",
+    title: "Développement Front-end",
     description:
-      "I ship what I design. Knowing the constraints of the code makes the design better upstream.",
+      "Transformer les maquettes en interfaces performantes et responsives. Ma connaissance du développement me permet d'anticiper les contraintes techniques dès la conception.",
     icon: Code2,
-    items: ["React", "Next.js", "TypeScript", "Responsive"],
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Responsive",
+    ],
   },
 ];
 
@@ -48,18 +68,18 @@ export type ToolGroup = { group: string; tools: string[] };
 
 export const tools: ToolGroup[] = [
   { group: "Design", tools: ["Figma", "FigJam", "Framer", "Whimsical"] },
-  { group: "Research", tools: ["Maze", "Dovetail", "Tally", "Notion"] },
-  { group: "Build", tools: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
-  { group: "Team", tools: ["Linear", "Jira", "Slack", "Storybook"] },
+  { group: "Recherche", tools: ["Maze", "Notion", "Tally"] },
+  { group: "Développement", tools: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+  { group: "Collaboration", tools: ["Trello", "GitHub", "Postman", "Visual Studio Code"] },
 ];
 
 export type SkillMeter = { label: string; level: number; note: string };
 
 export const skills: SkillMeter[] = [
-  { label: "UX Research", level: 90, note: "Interviews, testing, synthesis" },
-  { label: "UI & Design Systems", level: 95, note: "Tokens, components, docs" },
-  { label: "Prototyping", level: 85, note: "Figma, Framer, code prototypes" },
-  { label: "Accessibility", level: 80, note: "WCAG AA, keyboard, contrast" },
-  { label: "Front-end", level: 75, note: "React, Next.js, TypeScript" },
-  { label: "Product Strategy", level: 70, note: "Roadmaps, KPIs, discovery" },
+  { label: "Recherche utilisateur", level: 85, note: "Entretiens, personas, User Journey Maps" },
+  { label: "UX/UI Design", level: 90, note: "Figma, wireframes, maquettes" },
+  { label: "Prototypage", level: 85, note: "Figma, prototypes interactifs" },
+  { label: "Accessibilité", level: 80, note: "WCAG, contraste, responsive" },
+  { label: "Développement Front-end", level: 90, note: "React, Next.js, TypeScript" },
+  { label: "Stratégie Produit", level: 70, note: "Roadmaps, benchmark, KPIs" },
 ];

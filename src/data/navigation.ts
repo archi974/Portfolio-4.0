@@ -13,8 +13,8 @@ export const navigation: NavItem[] = [
 export const person = {
   name: "Vincent K/BIDI",
   role: "Product Designer · UX/UI",
-  location: "Montpellier, France",
+  location: "Hampteau en Belgique",
   email: "vincent.k.97480@gmail.com",
   tagline:
-    "Product Designer specialized in UX/UI with a strong front-end background using React, Next.js and TypeScript.",
+    "Designer produit spécialisé en UX/UI, avec une solide expérience en développement front-end (React, Next.js et TypeScript).",
 };

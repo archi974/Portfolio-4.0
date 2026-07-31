@@ -67,14 +67,14 @@ function ContactPage() {
             </ul>
 
             <p className="mt-8 text-sm text-ink-faint">
-              Based in {person.location} · Working remotely across Europe
+              Basé à {person.location} · Product Designer & Développeur Front-end
             </p>
           </div>
 
           <GlowCard className="p-7 sm:p-10">
-            <h2 className="font-display text-xl font-semibold">Send a brief</h2>
+            <h2 className="font-display text-xl font-semibold">Discutons de votre projet</h2>
             <p className="mt-2 mb-8 text-sm text-ink-soft">
-              Three fields. No newsletter, no automated follow-up.
+              Une question, un projet ou une opportunité ? N'hésitez pas à me contacter, je vous répondrai dans les meilleurs délais.
             </p>
             <ContactForm />
           </GlowCard>
