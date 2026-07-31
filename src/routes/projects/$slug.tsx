@@ -69,7 +69,10 @@ export const Route = createFileRoute("/projects/$slug")({
 });
 
 function CaseStudyPage() {
-  const { project, next } = Route.useLoaderData();
+  const { project, next } = Route.useLoaderData() as {
+    project: Project;
+    next: Project | undefined;
+  };
   const study = project.caseStudy;
 
   return (
