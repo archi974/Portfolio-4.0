@@ -4,17 +4,17 @@ export type NavItem = {
 };
 
 export const navigation: NavItem[] = [
-  { label: "Home", to: "/" },
-  { label: "Projects", to: "/projects" },
-  { label: "About", to: "/about" },
+  { label: "Accueil", to: "/" },
+  { label: "Projets", to: "/projects" },
+  { label: "À propos", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
 
 export const person = {
-  name: "Léa Marchand",
+  name: "Vincent K/BIDI",
   role: "Product Designer · UX/UI",
-  location: "Bordeaux, France",
-  email: "hello@leamarchand.design",
+  location: "Montpellier, France",
+  email: "vincent.k.97480@gmail.com",
   tagline:
     "Product Designer specialized in UX/UI with a strong front-end background using React, Next.js and TypeScript.",
 };

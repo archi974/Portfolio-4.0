@@ -37,25 +37,25 @@ function AboutPage() {
           <div>
             <p className="mb-4 flex items-center gap-3 font-display text-[0.72rem] font-semibold tracking-[0.22em] text-ink-faint uppercase">
               <span aria-hidden className="h-px w-8 bg-accent" />
-              About
+              À propos
             </p>
             <h1 className="text-4xl leading-[1.07] font-semibold sm:text-5xl">
-              I design products the way I'd want them built.
+              Je conçois des produits pensés pour les utilisateurs et conçus pour durer.
             </h1>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-ink-soft sm:text-lg">
               <p>
-                I'm {person.name}, a product designer based in {person.location}. I came to design
-                through front-end development, which is probably why I care as much about the state
-                nobody thought about as about the happy path.
+                Je suis {person.name}, Product Designer en formation avec une solide expérience en développement front-end, basé à {person.location}.
+                Mon parcours vers le design a commencé par la création d'interfaces web, ce qui m'a permis de comprendre qu'une bonne expérience utilisateur doit être à la fois intuitive pour les utilisateurs et réaliste à développer.
               </p>
               <p>
-                My approach is unremarkable on purpose: talk to people, frame the problem in writing,
-                sketch cheaply, test early, then build a system rather than a pile of screens. Most
-                of the value I add happens before anything looks finished.
+                J'aime transformer des besoins utilisateurs en solutions concrètes. Qu'il s'agisse de mener une recherche utilisateur,
+                de concevoir une interface sur Figma ou de réaliser un prototype interactif, mon objectif reste le même : comprendre le problème
+                avant de chercher la meilleure solution, puis concevoir des expériences simples, utiles et accessibles.
               </p>
               <p>
-                The front-end side is a complement, not a second job title. Knowing how a component
-                will be implemented changes what I propose — and it makes handovers short.
+                Mon expérience en React, Next.js et TypeScript est un véritable atout dans ma pratique du Product Design.
+                Elle me permet d'échanger efficacement avec les développeurs, d'anticiper les contraintes techniques dès la conception
+                et de créer des interfaces pensées pour être aussi agréables à utiliser qu'à développer.
               </p>
             </div>
             <div className="mt-9 flex flex-wrap gap-3">

@@ -39,10 +39,6 @@ export function Hero() {
             Designing intuitive digital experiences with a{" "}
             <span className="relative whitespace-nowrap">
               product mindset
-              <span
-                aria-hidden
-                className="absolute inset-x-0 -bottom-1 h-[0.28em] rounded-full bg-accent/35"
-              />
             </span>
             .
           </motion.h1>

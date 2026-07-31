@@ -39,7 +39,7 @@ export function Navbar() {
             aria-hidden
             className="flex size-9 items-center justify-center rounded-lg bg-primary font-display text-sm font-bold text-primary-foreground transition-transform duration-250 group-hover:-rotate-3"
           >
-            LM
+            VK
           </span>
           <span className="hidden font-display text-sm leading-tight font-semibold sm:block">
             {person.name}
@@ -62,13 +62,13 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ButtonAnchor
-            href="/resume.pdf"
+            href="/Curriculum_Vitae_Vincent_KBIDI.pdf"
             download
             size="sm"
             className="hidden sm:inline-flex"
           >
             <Download aria-hidden />
-            Download resume
+            Télécharger le CV
           </ButtonAnchor>
 
           <button
@@ -97,9 +97,9 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <ButtonAnchor href="/resume.pdf" download className="mt-3 w-full">
+            <ButtonAnchor href="/Curriculum_Vitae_Vincent_KBIDI.pdf" download className="mt-3 w-full">
               <Download aria-hidden />
-              Download resume
+              Télécharger le CV
             </ButtonAnchor>
           </Container>
         </div>
