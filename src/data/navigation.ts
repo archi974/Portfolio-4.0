@@ -12,7 +12,7 @@ export const navigation: NavItem[] = [
 
 export const person = {
   name: "Vincent K/BIDI",
-  role: "Product Designer · UX/UI",
+  role: "Product Designer · Front-end Developer",
   location: "Hampteau en Belgique",
   email: "vincent.k.97480@gmail.com",
   tagline:

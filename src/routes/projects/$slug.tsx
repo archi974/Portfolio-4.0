@@ -33,36 +33,36 @@ export const Route = createFileRoute("/projects/$slug")({
       links: [{ rel: "canonical", href: `/projects/${params.slug}` }],
       scripts: project
         ? [
-            {
-              type: "application/ld+json",
-              children: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "CreativeWork",
-                name: project.title,
-                description: project.description,
-                dateCreated: project.year,
-                keywords: project.tags.join(", "),
-                author: { "@type": "Person", name: person.name },
-              }),
-            },
-            {
-              type: "application/ld+json",
-              children: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                itemListElement: [
-                  { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-                  { "@type": "ListItem", position: 2, name: "Projects", item: "/projects" },
-                  {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: project.title,
-                    item: `/projects/${params.slug}`,
-                  },
-                ],
-              }),
-            },
-          ]
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              name: project.title,
+              description: project.description,
+              dateCreated: project.year,
+              keywords: project.tags.join(", "),
+              author: { "@type": "Person", name: person.name },
+            }),
+          },
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "/" },
+                { "@type": "ListItem", position: 2, name: "Projects", item: "/projects" },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: project.title,
+                  item: `/projects/${params.slug}`,
+                },
+              ],
+            }),
+          },
+        ]
         : [],
     };
   },
@@ -182,7 +182,7 @@ function CaseStudyPage() {
             <Section ariaLabelledby="results-title" className="paper border-y border-border">
               <Container>
                 <h2 id="results-title" className="text-2xl font-semibold sm:text-3xl">
-                  Results
+                  Résultats
                 </h2>
                 <div className="mt-10 grid gap-6 sm:grid-cols-3">
                   {study.results.map((result) => (
@@ -201,7 +201,7 @@ function CaseStudyPage() {
             <Section ariaLabelledby="learnings-title">
               <Container className="max-w-3xl">
                 <h2 id="learnings-title" className="text-2xl font-semibold sm:text-3xl">
-                  Key learnings
+                  Principaux enseignements
                 </h2>
                 <ul className="mt-8 space-y-5">
                   {study.learnings.map((item) => (
@@ -217,7 +217,7 @@ function CaseStudyPage() {
             <Section ariaLabelledby="gallery-title" className="pt-0">
               <Container>
                 <h2 id="gallery-title" className="text-2xl font-semibold sm:text-3xl">
-                  Gallery
+                  Gallerie
                 </h2>
                 <div className="mt-10 grid gap-6 sm:grid-cols-3">
                   {study.gallery.map((item) => (
@@ -245,6 +245,7 @@ function CaseStudyPage() {
                         <li key={resource.label}>
                           <a
                             href={resource.href}
+                            target="_blank"
                             className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 font-display text-sm font-medium transition-colors duration-250 hover:border-accent"
                           >
                             <ExternalLink className="size-4" aria-hidden />
@@ -268,7 +269,7 @@ function CaseStudyPage() {
                 className="inline-flex items-center gap-2 font-display text-sm font-medium text-ink-soft transition-colors duration-250 hover:text-ink"
               >
                 <ArrowLeft className="size-4" aria-hidden />
-                All projects
+                Tous les projets
               </Link>
               {next ? (
                 <Link
@@ -278,7 +279,7 @@ function CaseStudyPage() {
                 >
                   <span>
                     <span className="block font-display text-xs tracking-[0.18em] text-ink-faint uppercase">
-                      Next project
+                      Prochain project
                     </span>
                     <span className="block font-display text-lg font-semibold">{next.title}</span>
                   </span>

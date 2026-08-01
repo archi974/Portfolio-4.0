@@ -148,177 +148,189 @@ export const eventoriasCase: CaseStudy = {
 
 export const cafeCase: CaseStudy = {
   overview: [
-    { label: "Role", value: "User research, Service design" },
-    { label: "Timeline", value: "6 weeks, 2023" },
-    { label: "Team", value: "Me and the café owners" },
-    { label: "Output", value: "Journey map, personas, service blueprint" },
+    { label: "Mon Rôle", value: "Recherche utilisateur, Design de service" },
+    { label: "Durée", value: "6 semaines" },
+    { label: "Contexte", value: "Projet de formation OpenClassrooms" },
+    { label: "Livrables", value: "Personas, User Journey Maps, Service Blueprint" },
   ],
   sections: [
     {
       id: "context",
-      title: "Context",
+      title: "Contexte",
       body: [
-        "Café des Beaux-Arts is a neighbourhood café that also hosts exhibitions from local artists. The owners wanted a booking website. Before designing one, we agreed to spend two weeks understanding whether booking was the actual friction.",
+        "Le Café des Beaux-Arts souhaitait améliorer l'expérience de ses clients en comprenant les difficultés rencontrées tout au long de leur parcours. L'objectif était d'identifier les points de friction avant de proposer des solutions adaptées.",
       ],
     },
     {
       id: "problem",
-      title: "Problem",
+      title: "Problématique",
       body: [
-        "Regulars were happy. Newcomers who came for an exhibition rarely returned, and the owners had no idea why. Nothing in the existing digital touchpoints explained what the place was.",
+        "Malgré une clientèle fidèle, certains visiteurs rencontraient des difficultés lors de leur expérience au café. Les gérants souhaitaient mieux comprendre leurs besoins afin d'améliorer le service et la satisfaction globale.",
       ],
     },
     {
       id: "role",
-      title: "My role",
+      title: "Mon rôle",
       body: [
-        "I ran the research end to end: recruitment, interviews, on-site observation, synthesis and the final restitution workshop.",
+        "J'ai mené l'ensemble de la démarche UX : préparation de la recherche, observation terrain, entretiens utilisateurs, analyse des données, création des livrables UX et restitution des recommandations.",
       ],
     },
     {
       id: "research",
-      title: "Research",
-      body: ["Mixed methods, small sample, deliberately qualitative."],
+      title: "Recherche utilisateur",
+      body: [
+        "Une approche qualitative a été privilégiée afin de comprendre les comportements, les attentes et les frustrations des utilisateurs.",
+      ],
       list: [
-        "12 customer interviews, split between regulars and first-time visitors",
-        "3 observation sessions of 2 hours during exhibition openings",
-        "Staff shadowing with the two baristas",
-        "Review of 60 online reviews",
+        "Observation du fonctionnement du Café des Beaux-Arts",
+        "5 entretiens semi-directifs avec des profils variés",
+        "Analyse et synthèse des verbatims",
+        "Identification des principaux points de friction",
       ],
     },
     {
       id: "insights",
-      title: "Insights",
-      body: ["The journey broke long before any booking screen."],
+      title: "Principaux enseignements",
+      body: [
+        "L'analyse a mis en évidence plusieurs opportunités d'amélioration concernant le parcours client et la communication des informations.",
+      ],
       list: [
-        "First-time visitors could not tell if the exhibition space was free to enter.",
-        "The busiest moment for staff — openings — was also the moment newcomers needed the most guidance.",
-        "Two thirds of newcomers arrived through an artist's own social post, never through the café's channels.",
+        "Les nouveaux visiteurs manquent de repères lors de leur arrivée.",
+        "Certaines informations importantes ne sont pas suffisamment visibles.",
+        "Le parcours peut être simplifié afin de rendre l'expérience plus fluide.",
       ],
     },
     {
       id: "process",
-      title: "Process",
+      title: "Processus UX",
       body: [
-        "I mapped the end-to-end journey across five phases, then built a service blueprint that showed which frontstage failures came from backstage constraints. Two personas emerged: the regular remote worker and the exhibition-first visitor.",
+        "Les résultats de la recherche ont permis de construire deux personas, deux User Journey Maps, un How Might We (HMW) et un Service Blueprint afin de visualiser l'expérience utilisateur et les interactions avec le service.",
       ],
     },
     {
       id: "wireframes",
-      title: "Iterations",
+      title: "Pistes d'amélioration",
       body: [
-        "Instead of a booking site, the first deliverable was a set of small service changes: a one-line entry sign, a printed exhibition card on each table, and a shared post template given to exhibiting artists.",
+        "À partir des enseignements de la recherche, plusieurs recommandations ont été formulées pour améliorer l'expérience utilisateur, faciliter l'accès aux informations essentielles et optimiser le parcours client.",
       ],
     },
     {
       id: "solution",
-      title: "Final solution",
+      title: "Résultat",
       body: [
-        "A lightweight website focused on the exhibition programme and practical information, plus the service changes above. Booking was reduced to a single form for private events, which was the only booking need the research actually surfaced.",
+        "Cette démarche UX a permis de fournir une vision claire des besoins des utilisateurs et de proposer des solutions concrètes, centrées sur leurs attentes, afin d'améliorer durablement l'expérience au Café des Beaux-Arts.",
       ],
     },
   ],
   results: [
-    { metric: "3 of 5", label: "Journey phases reworked", note: "Prioritised with the owners in a 2-hour workshop" },
-    { metric: "12", label: "Interviews", note: "Regulars and first-time visitors" },
-    { metric: "1 page", label: "Website scope", note: "Down from the initial 6-page brief" },
+    { metric: "5", label: "Entretiens utilisateurs", note: "Profils variés pour comprendre les besoins et les points de friction" },
+    { metric: "2", label: "Personas", note: "Construits à partir de la recherche utilisateur" },
+    { metric: "4", label: "Livrables UX", note: "User Journey Maps, HMW, Service Blueprint et recommandations" },
   ],
   learnings: [
-    "The most useful outcome of this project was removing scope, not adding features.",
-    "Observation caught things interviews never would — people hesitating at the door for several seconds.",
-    "Involving the owners in the synthesis made the recommendations stick without a formal report.",
+    "Ce projet m'a confirmé l'importance de commencer par comprendre les utilisateurs avant de proposer des solutions.",
+    "La combinaison d'observations terrain et d'entretiens offre une vision beaucoup plus complète du parcours utilisateur.",
+    "Transformer les enseignements de la recherche en livrables UX m'a permis de structurer des recommandations claires et directement exploitables.",
   ],
   gallery: [
-    { caption: "Journey map, five phases", alt: "Customer journey map on paper" },
-    { caption: "Service blueprint", alt: "Service blueprint with frontstage and backstage lanes" },
-    { caption: "Personas", alt: "Two persona cards" },
+    { caption: "Personas", alt: "Deux personas issus de la recherche utilisateur" },
+    { caption: "User Journey Maps", alt: "Visualisation du parcours utilisateur et des points de friction" },
+    { caption: "Service Blueprint & HMW", alt: "Service Blueprint et atelier How Might We utilisés pour identifier les opportunités de conception" },
   ],
-  resources: [{ label: "Journey map (PDF)", href: "#" }],
+  resources: [
+    { label: "Protocole de recherche", href: "/Etude_UX_cafe_des_beaux_arts_1_protocole_de_recherche_062026.pdf" },
+    { label: "Grille d'observation", href: "/Etude_UX_cafe_des_beaux_arts_2_grille_observation_062026.pdf" },
+    { label: "Guide d'entretien", href: "/Etude_UX_cafe_des_beaux_arts_3_guide_entretien_062026.pdf" },
+    { label: "Journey map", href: "https://www.figma.com/board/YQxSVzCWVvMfOBRWFnPuop/Customer-Journey-Map--Community-?node-id=0-1&t=e7Qywqh1p1Nn8DEE-1" },
+    { label: "Atelier d'idéation", href: "https://miro.com/app/board/uXjVHHjpdTg=/?embedMode=view_only_without_ToViewport%3D-1538,-452,3463,1684&embedId=190246243052" },
+    { label: "Plan de conception UX/UI", href: "https://slender-singer-afe.notion.site/Plan-de-conception-UX-UI-23c72a437cfc834799e081c465502e81" },
+  ],
 };
 
 export const roadmapCase: CaseStudy = {
   overview: [
-    { label: "Role", value: "Product strategy, Benchmark, Roadmap" },
-    { label: "Timeline", value: "4 weeks, 2024" },
-    { label: "Team", value: "Me, a founder, a lead developer" },
-    { label: "Output", value: "Benchmark, KPI framework, 2-quarter roadmap" },
+    { label: "Mon Rôle", value: "Recherche UX, Analyse, Priorisation, Roadmap UX" },
+    { label: "Durée", value: "4 semaines" },
+    { label: "Contexte", value: "Projet de formation OpenClassrooms" },
+    { label: "Livrables", value: "Analyses UX, Roadmap, Recommandations" },
   ],
   sections: [
     {
       id: "context",
-      title: "Context",
+      title: "Contexte",
       body: [
-        "A three-person team building a scheduling tool for independent therapists had a long backlog and no shared way to decide what came next. Everything was described as urgent.",
+        "Ce projet consistait à analyser l'expérience utilisateur d'un produit numérique afin d'identifier les principaux points de friction et de proposer une feuille de route d'amélioration priorisée.",
       ],
     },
     {
       id: "problem",
-      title: "Problem",
+      title: "Problématique",
       body: [
-        "The backlog held 78 items with no criteria attached. Decisions were made in conversation and reversed the following week, which cost the developer roughly a third of his time in rework.",
+        "L'objectif était de transformer les résultats des analyses qualitatives et quantitatives en recommandations concrètes, puis de définir les améliorations à mettre en œuvre selon leur impact utilisateur et leur priorité.",
       ],
     },
     {
       id: "role",
-      title: "My role",
+      title: "Mon rôle",
       body: [
-        "I facilitated the exercise rather than owning the decisions. My job was to give the team a frame they could keep using after I left.",
+        "J'ai réalisé l'ensemble de la démarche : analyse des données, synthèse des résultats, priorisation des opportunités d'amélioration et élaboration de la Roadmap UX.",
       ],
     },
     {
       id: "research",
-      title: "Research & benchmark",
+      title: "Recherche et analyse",
       body: [
-        "I reviewed six competing products against the jobs the team's users described, and interviewed five customers about the moment they almost churned.",
+        "Le travail s'est appuyé sur une analyse qualitative, une analyse quantitative et un tableau de croisement afin de consolider les observations et identifier les axes d'amélioration les plus pertinents.",
       ],
       list: [
-        "6-product feature and pricing benchmark",
-        "5 churn-risk interviews",
-        "Support ticket tagging over 4 months",
+        "Analyse qualitative",
+        "Analyse quantitative",
+        "Tableau de croisement",
+        "Synthèse des enseignements",
       ],
     },
     {
       id: "insights",
-      title: "Insights",
+      title: "Principaux enseignements",
       body: [
-        "Most backlog items served acquisition. Nearly every churn signal came from the first two weeks of use, where nothing was planned.",
+        "La confrontation des données qualitatives et quantitatives a permis de mettre en évidence les principaux points de friction du parcours utilisateur et les opportunités ayant le plus fort impact potentiel.",
       ],
     },
     {
       id: "process",
-      title: "Process",
+      title: "Priorisation",
       body: [
-        "We scored the backlog with a simple impact-versus-effort grid, defined four KPIs the team could actually measure with their current tooling, and grouped the survivors into three themes across two quarters.",
-      ],
-      list: [
-        "Activation rate at day 14",
-        "Weekly active practitioners",
-        "Support tickets per 100 bookings",
-        "Time to first completed booking",
+        "Les enseignements issus de la recherche ont été transformés en recommandations UX, puis organisés au sein d'une Roadmap afin de définir un ordre de mise en œuvre cohérent selon leur valeur pour les utilisateurs.",
       ],
     },
     {
       id: "solution",
-      title: "Final roadmap",
+      title: "Roadmap UX",
       body: [
-        "Quarter one focused entirely on activation. Quarter two on reducing support load. Everything else moved to a parked list with a stated reason, which turned out to be the part the founder valued most.",
+        "Le projet aboutit à une Roadmap UX accompagnée de recommandations détaillées permettant de guider les futures évolutions du produit tout en s'appuyant sur les données recueillies lors des analyses.",
       ],
     },
   ],
   results: [
-    { metric: "78 → 21", label: "Backlog items", note: "After scoring and parking" },
-    { metric: "4", label: "KPIs adopted", note: "Reviewed monthly by the team" },
-    { metric: "2 quarters", label: "Roadmap horizon", note: "Themes, not dated features" },
+    { metric: "2", label: "Analyses réalisées", note: "Qualitative et quantitative" },
+    { metric: "1", label: "Roadmap UX", note: "Priorisation des recommandations" },
+    { metric: "1", label: "Document de recommandations", note: "Actions d'amélioration proposées" },
   ],
   learnings: [
-    "Writing down why something was parked prevented the same discussion from returning every week.",
-    "Four measurable KPIs beat twelve aspirational ones for a team this size.",
-    "Facilitation, not authorship, was what made the roadmap survive.",
+    "Croiser des données qualitatives et quantitatives permet d'obtenir une vision plus fiable des problèmes rencontrés par les utilisateurs.",
+    "Prioriser les recommandations aide à concentrer les efforts sur les améliorations offrant le plus de valeur.",
+    "Une Roadmap UX facilite la planification des évolutions en reliant les décisions de conception aux résultats de la recherche.",
   ],
   gallery: [
-    { caption: "Impact / effort grid", alt: "Prioritisation grid" },
-    { caption: "KPI framework", alt: "KPI framework sheet" },
-    { caption: "Two-quarter roadmap", alt: "Roadmap timeline by theme" },
+    { caption: "Analyse qualitative", alt: "Synthèse des résultats de l'analyse qualitative" },
+    { caption: "Analyse quantitative", alt: "Résultats de l'analyse quantitative et tableau de croisement" },
+    { caption: "Roadmap UX", alt: "Roadmap UX présentant les recommandations priorisées" },
   ],
-  resources: [{ label: "Benchmark summary", href: "#" }],
+  resources: [
+    { label: "Analyse qualitative", href: "https://hexagonal-ash-6cc.notion.site/Template-Heuristiques-de-Nielsen-analyse-qualitative-35d71e1ab529801ea21af7254a282ba9" },
+    { label: "Analyse quantitatives", href: "https://hexagonal-ash-6cc.notion.site/Template-analyse-de-donn-es-quantitatives-35e71e1ab52980399d88ff0f28138139" },
+    { label: "Tableau de croisement", href: "https://hexagonal-ash-6cc.notion.site/Tableau-de-croisement-35e71e1ab52980b09c38f5be5738818b" },
+    { label: "Roadmap UX", href: "https://hexagonal-ash-6cc.notion.site/9ff71e1ab52982a4b49201c3bb821130?v=a8571e1ab52982a4a7c008ea6c63621a" },
+    { label: "Recommandations UX", href: "/Roadmap_recommandations_052026.pdf" },
+  ],
 };

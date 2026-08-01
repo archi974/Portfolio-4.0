@@ -9,9 +9,9 @@ export function ServicesSection() {
       <Container>
         <SectionHeading
           id="services-heading"
-          eyebrow="What I do"
-          title="Four ways I contribute to a product team"
-          description="Research and interface work sit at the centre. Strategy and front-end are what make the handover hold together."
+          eyebrow="Compétence"
+          title="Ce que je maîtrise"
+          description="De la recherche utilisateur au développement front-end, j'interviens à chaque étape de la conception d'un produit numérique en plaçant les besoins des utilisateurs au cœur de chaque décision."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

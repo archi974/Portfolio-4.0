@@ -9,19 +9,19 @@ export function ContactCta() {
       <Container>
         <div className="glow-card paper px-8 py-14 text-center sm:px-14 sm:py-20">
           <h2 id="cta-heading" className="mx-auto max-w-2xl text-3xl font-semibold sm:text-4xl">
-            Have a product that deserves a second look?
+            Donnons vie à votre prochain produit.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-ink-soft">
-            I take on two projects at a time, from a two-week discovery sprint to a full design and
-            front-end collaboration.
+            Product Designer spécialisé en UX/UI, je conçois des expériences numériques
+            centrées sur les utilisateurs, du besoin métier jusqu'au prototype interactif.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3">
             <ButtonLink to="/contact" size="lg">
-              Start a conversation
+              Me contacter
               <ArrowRight aria-hidden />
             </ButtonLink>
             <ButtonLink to="/about" size="lg" variant="outline">
-              More about me
+              En savoir plus
             </ButtonLink>
           </div>
           <ul className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3">

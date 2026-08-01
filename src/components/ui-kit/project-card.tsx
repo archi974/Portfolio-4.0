@@ -14,7 +14,7 @@ export function ProjectCard({ project }: { project: Project }) {
           <div className="flex h-full items-center justify-center bg-secondary/70">
             <span className="flex items-center gap-2 font-display text-sm font-medium text-ink-faint">
               <Clock className="size-4" aria-hidden />
-              Coming soon
+              À venir
             </span>
           </div>
         ) : (
@@ -46,14 +46,14 @@ export function ProjectCard({ project }: { project: Project }) {
         </ul>
 
         {isComingSoon ? (
-          <p className="pt-2 font-display text-sm font-medium text-ink-faint">In progress</p>
+          <p className="pt-2 font-display text-sm font-medium text-ink-faint">En cours</p>
         ) : (
           <Link
             to="/projects/$slug"
             params={{ slug: project.slug }}
             className="group inline-flex w-fit items-center gap-2 pt-2 font-display text-sm font-semibold text-primary transition-colors duration-250 hover:text-ink"
           >
-            Read case study
+            Voir plus
             <ArrowUpRight
               aria-hidden
               className="size-4 transition-transform duration-250 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

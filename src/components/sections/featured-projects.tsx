@@ -12,12 +12,12 @@ export function FeaturedProjects() {
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
             id="featured-heading"
-            eyebrow="Selected work"
-            title="Case studies, written honestly"
-            description="Three projects with the decisions, the detours and the parts that did not work."
+            eyebrow="Mes Projets"
+            title="Mes réalisations"
+            description="Une sélection de projets mettant en avant ma démarche de conception centrée utilisateur."
           />
           <ButtonLink to="/projects" variant="outline">
-            All projects
+            Tous les projets
             <ArrowRight aria-hidden />
           </ButtonLink>
         </div>

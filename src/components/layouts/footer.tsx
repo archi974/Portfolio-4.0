@@ -35,7 +35,7 @@ export function Footer() {
 
           <div>
             <h2 className="font-display text-xs font-semibold tracking-[0.18em] text-ink-faint uppercase">
-              Elsewhere
+              Réseaux
             </h2>
             <ul className="mt-4 space-y-2.5">
               {socials.map((social) => (
@@ -57,8 +57,8 @@ export function Footer() {
       </Container>
 
       <Container className="flex flex-col gap-2 border-t border-border py-6 text-xs text-ink-faint sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} {person.name}. All rights reserved.</p>
-        <p>Designed and built with care — React, TypeScript, Tailwind CSS.</p>
+        <p>© {new Date().getFullYear()} {person.name}. Tous droits réservés.</p>
+        <p>Conçu et développé avec React, TypeScript et Tailwind CSS.</p>
       </Container>
     </footer>
   );
