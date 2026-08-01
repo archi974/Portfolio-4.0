@@ -6,9 +6,9 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { designProjects } from "@/data/projects-design";
 import { developmentProjects } from "@/data/projects-development";
 
-const title = "Projects — Product Design & Development | Léa Marchand";
+const title = "Projets — Product Design & Développement | Vincent K/BIDI";
 const description =
-  "Product design case studies covering research, service design and strategy, plus front-end projects built with React, Next.js and TypeScript.";
+  "Découvrez mes études de cas en Product Design (UX/UI) ainsi que mes projets de développement front-end réalisés avec React, Next.js et TypeScript.";
 
 export const Route = createFileRoute("/projects/")({
   component: ProjectsPage,
@@ -31,14 +31,15 @@ function ProjectsPage() {
         <Container>
           <p className="mb-4 flex items-center gap-3 font-display text-[0.72rem] font-semibold tracking-[0.22em] text-ink-faint uppercase">
             <span aria-hidden className="h-px w-8 bg-accent" />
-            Projects
+            Projets
           </p>
           <h1 className="max-w-3xl text-4xl leading-[1.06] font-semibold sm:text-5xl lg:text-[3.5rem]">
-            Work I can talk about in detail.
+            Découvrez mes projets
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-soft sm:text-lg">
-            Two families of projects: product design engagements that start with research, and
-            front-end builds where I own the implementation.
+            Retrouvez une sélection de projets illustrant ma démarche de conception,
+            de la recherche utilisateur jusqu'au développement d'interfaces web
+            interactives.
           </p>
           <nav aria-label="Project categories" className="mt-8 flex flex-wrap gap-3">
             <a
@@ -51,7 +52,7 @@ function ProjectsPage() {
               href="#development"
               className="rounded-full border border-border bg-surface px-4 py-2 font-display text-sm font-medium transition-colors duration-250 hover:border-accent"
             >
-              Development
+              Développement
             </a>
           </nav>
         </Container>
@@ -61,8 +62,8 @@ function ProjectsPage() {
         <Container>
           <SectionHeading
             id="design-heading"
-            eyebrow="Product Design"
-            title="Research, interfaces and strategy"
+            eyebrow="UX/UI Design"
+            title="Recherche, conception et prototypage"
           />
           <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
             {designProjects.map((project, index) => (
@@ -78,8 +79,8 @@ function ProjectsPage() {
         <Container>
           <SectionHeading
             id="dev-heading"
-            eyebrow="Development"
-            title="Things I designed and then built"
+            eyebrow="Développement Front-end"
+            title="Des interfaces conçues et développées"
           />
           <div className="mt-12 grid gap-7 md:grid-cols-2">
             {developmentProjects.map((project, index) => (

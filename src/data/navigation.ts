@@ -16,5 +16,5 @@ export const person = {
   location: "Hampteau en Belgique",
   email: "vincent.k.97480@gmail.com",
   tagline:
-    "Designer produit spécialisé en UX/UI, avec une solide expérience en développement front-end (React, Next.js et TypeScript).",
+    "Product Designer spécialisé en UX/UI et développement Front-end, basé en Belgique et ouvert aux opportunités au Luxembourg.",
 };

@@ -5,9 +5,9 @@ import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { PageTransition } from "@/components/ui-kit/motion";
 
-const title = "Léa Marchand — Product Designer, UX/UI & Front-end";
+const title = "Vincent K/BIDI — Product Designer, UX/UI & Front-end";
 const description =
-  "Product Designer specialized in UX/UI with a strong front-end background in React, Next.js and TypeScript. Case studies on research, design systems and product strategy.";
+  "Portfolio de Product Designer spécialisé en UX/UI et développement Front-end. De la recherche utilisateur au développement d'interfaces web avec React, Next.js et TypeScript.";
 
 export const Route = createFileRoute("/")({
   component: Index,

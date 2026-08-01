@@ -20,16 +20,16 @@ function NotFoundComponent() {
     <div className="flex min-h-dvh items-center justify-center px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-7xl font-semibold">404</h1>
-        <h2 className="mt-4 text-xl font-semibold">Page not found</h2>
+        <h2 className="mt-4 text-xl font-semibold">Page introuvable</h2>
         <p className="mt-2 text-sm text-ink-soft">
-          The page you're looking for doesn't exist or has been moved.
+          La page que vous recherchez n'existe pas ou a été déplacée.
         </p>
         <div className="mt-6">
           <Link
             to="/"
             className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 font-display text-sm font-semibold text-primary-foreground transition-colors duration-250 hover:bg-ink"
           >
-            Go home
+            Retour à l'accueil
           </Link>
         </div>
       </div>
@@ -47,9 +47,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-dvh items-center justify-center px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight">This page didn't load</h1>
+        <h1 className="text-xl font-semibold tracking-tight">Une erreur est survenue</h1>
         <p className="mt-2 text-sm text-ink-soft">
-          Something went wrong on our end. You can try refreshing or head back home.
+          Impossible de charger cette page. Vous pouvez réessayer ou revenir à l'accueil.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
@@ -59,13 +59,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
             }}
             className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 font-display text-sm font-semibold text-primary-foreground transition-colors duration-250 hover:bg-ink"
           >
-            Try again
+            Réessayer
           </button>
           <a
             href="/"
             className="inline-flex items-center justify-center rounded-full border border-border bg-surface px-5 py-2.5 font-display text-sm font-semibold transition-colors duration-250 hover:border-accent"
           >
-            Go home
+            Accueil
           </a>
         </div>
       </div>
@@ -103,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: person.name,
           jobTitle: "Product Designer",
           description: person.tagline,
-          address: { "@type": "PostalAddress", addressLocality: "Bordeaux", addressCountry: "FR" },
+          address: { "@type": "PostalAddress", addressCountry: "Belgique" },
           knowsAbout: [
             "UX Research",
             "UI Design",
@@ -124,7 +124,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <HeadContent />
       </head>
@@ -145,7 +145,7 @@ function RootComponent() {
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:rounded-full focus:bg-primary focus:px-5 focus:py-2.5 focus:font-display focus:text-sm focus:font-semibold focus:text-primary-foreground"
       >
-        Skip to content
+        Passer au contenu
       </a>
       <div className="flex min-h-dvh flex-col">
         <Navbar />

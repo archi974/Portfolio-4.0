@@ -6,9 +6,9 @@ import { GlowCard } from "@/components/ui-kit/glow-card";
 import { socials } from "@/data/socials";
 import { person } from "@/data/navigation";
 
-const title = "Contact Léa Marchand — Product Designer available for projects";
+const title = "Contact - Vincent | Product Designer UX/UI";
 const description =
-  "Freelance product design, UX research and front-end collaboration. Email, LinkedIn and GitHub, or send a short brief directly.";
+  "Vous avez un projet, une opportunité ou une question ? Contactez-moi pour échanger autour du Product Design, de l'UX/UI ou du développement Front-end.";
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
@@ -35,11 +35,12 @@ function ContactPage() {
               Contact
             </p>
             <h1 className="text-4xl leading-[1.07] font-semibold sm:text-5xl">
-              Let's talk about your product.
+              Parlons de votre projet.
             </h1>
             <p className="mt-6 text-base leading-relaxed text-ink-soft sm:text-lg">
-              Whether you need a discovery sprint, a design system, or a designer who can also open
-              a pull request — tell me where you are and I'll tell you honestly if I'm the right fit.
+              Vous avez une opportunité, un projet ou simplement une question ?
+              Je serai ravi d'échanger avec vous autour du Product Design,
+              de l'UX/UI ou du développement Front-end.
             </p>
 
             <ul className="mt-10 space-y-3">
