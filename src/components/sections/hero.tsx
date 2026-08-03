@@ -30,14 +30,14 @@ export function Hero() {
             className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-border bg-surface/70 px-4 py-1.5 font-display text-xs font-medium text-ink-soft"
           >
             <span aria-hidden className="size-1.5 rounded-full bg-accent" />
-            Disponible pour des missions en Product Design
+            Disponible pour des missions Design et Web
           </motion.p>
 
           <motion.h1
             {...fade(0.06)}
             className="text-[2.6rem] leading-[1.04] font-semibold sm:text-[3.4rem] lg:text-[4rem]"
           >
-            Je conçois des
+            Je crée des
             <br />
             <TypingText
               words={[

@@ -15,8 +15,17 @@ export const experience: TimelineEntry[] = [
       "Formation professionnelle en Product Design couvrant la recherche utilisateur, le design d'interfaces, la stratégie produit, le prototypage et les tests utilisateurs. Réalisation de projets complets allant de la recherche UX à la conception de prototypes interactifs en collaboration avec des développeurs.",
     tags: [
       "Recherche utilisateur",
-      "UI Design",
-      "Prototypage"
+      "Entretiens utilisateurs",
+      "Personas",
+      "Parcours utilisateur",
+      "User flow",
+      "Atelier",
+      "Plan de conception UX/UI",
+      "Maquettes",
+      "Wireframes",
+      "Moodboard",
+      "Prototypage",
+      "Micro-test"
     ],
   },
   {
@@ -26,9 +35,17 @@ export const experience: TimelineEntry[] = [
     description:
       "Conception et développement de sites vitrines et de portfolios pour des particuliers et des petites entreprises. Intégration de maquettes Figma avec React et Next.js, optimisation des performances web et intégration d'API externes ainsi que de services Firebase.",
     tags: [
+      "Next",
+      "Redux",
+      "MongoDB",
+      "Node",
+      "Express",
       "React",
-      "Next.js",
-      "TypeScript"
+      "TypeScript",
+      "Tailwind",
+      "CSS",
+      "HTML",
+      "Figma"
     ],
   },
   {
@@ -38,9 +55,16 @@ export const experience: TimelineEntry[] = [
     description:
       "Obtention du titre professionnel de Développeur Web à travers plusieurs projets couvrant JavaScript, le développement responsive, l'architecture d'applications, l'optimisation des performances, le développement full-stack et la création d'un portfolio professionnel.",
     tags: [
+      "MongoDB",
+      "Node.js",
+      "Express",
+      "React",
+      "Typescript",
+      "Tailwind",
+      "Sass",
       "JavaScript",
-      "Full-stack",
-      "Performance"
+      "HTML",
+      "CSS"
     ],
   },
   {
@@ -52,7 +76,9 @@ export const experience: TimelineEntry[] = [
     tags: [
       "Mentorat",
       "Hackathon",
-      "HTML/CSS"
+      "HTML",
+      "CSS",
+      "JavaScript"
     ],
   },
   {
@@ -62,9 +88,19 @@ export const experience: TimelineEntry[] = [
     description:
       "Formation intensive en développement web permettant d'acquérir de solides bases en développement front-end et back-end, en architecture logicielle et en travail collaboratif sur des projets techniques.",
     tags: [
-      "Développement Web",
+      "React Native",
       "React",
-      "Node.js"
+      "Vue",
+      "Jquery",
+      "Javascript",
+      "Symfony",
+      "Laravel",
+      "MySQL",
+      "PHP",
+      "Tailwind",
+      "SASS",
+      "CSS",
+      "HTML"
     ],
   },
   {
@@ -75,7 +111,9 @@ export const experience: TimelineEntry[] = [
       "Formation orientée vers les systèmes numériques, les bases du développement logiciel et la résolution de problématiques techniques, constituant les fondations de mon parcours dans le développement informatique.",
     tags: [
       "Systèmes numériques",
-      "Programmation"
+      "Programmation",
+      "HTML",
+      "CSS"
     ],
   },
 ];

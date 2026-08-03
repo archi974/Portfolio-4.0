@@ -67,10 +67,10 @@ export const services: Service[] = [
 export type ToolGroup = { group: string; tools: string[] };
 
 export const tools: ToolGroup[] = [
-  { group: "Design", tools: ["Figma", "FigJam", "Framer", "Whimsical"] },
-  { group: "Recherche", tools: ["Maze", "Notion", "Tally"] },
-  { group: "Développement", tools: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
-  { group: "Collaboration", tools: ["Trello", "GitHub", "Postman", "Visual Studio Code"] },
+  { group: "Design", tools: ["Figma", "FigJam", "Miro", "Figma Make", "Canva"] },
+  { group: "Recherche", tools: [ "Notion", "ChatGPT", "Claude", "Copilot", "V0", "Lovable"] },
+  { group: "Développement", tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Javascript", "Node.js"] },
+  { group: "Collaboration", tools: ["Trello", "GitHub", "Postman", "Visual Studio Code", "MongoDB Atlas", "Firebase"] },
 ];
 
 export type SkillMeter = { label: string; level: number; note: string };

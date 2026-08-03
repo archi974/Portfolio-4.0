@@ -11,9 +11,9 @@ import { experience } from "@/data/experience";
 import { skills, tools } from "@/data/skills";
 import { person } from "@/data/navigation";
 
-const title = "About Léa Marchand — Product Design approach & experience";
+const title = "À propos - Vincent K/BIDI | Product Designer & Développeur web front-end";
 const description =
-  "How I work as a Product Designer: research first, systems over screens, and a front-end background that keeps design decisions grounded in what can ship.";
+  "Découvrez mon parcours, mon approche du Product Design ainsi que mes compétences en UX/UI Design et développement Front-end.";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -40,8 +40,16 @@ function AboutPage() {
               À propos
             </p>
             <h1 className="text-4xl leading-[1.07] font-semibold sm:text-5xl">
-              Je conçois des produits pensés pour les utilisateurs et conçus pour durer.
+              Je conçois des produits pensés pour les utilisateurs, conçu pour être développés.
             </h1>
+            <span className="mt-3 flex flex-wrap gap-2 text-sm font-medium text-ink-faint sm:text-base">
+              <Tag>📍 Montpellier</Tag>
+              <Tag>🎓 Product Designer</Tag>
+              <Tag>React</Tag>
+              <Tag>Next.js</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>🎨 UX/UI</Tag>
+            </span>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-ink-soft sm:text-lg">
               <p>
                 Je suis {person.name}, Product Designer en formation avec une solide expérience en développement front-end, basé à {person.location}.
@@ -61,10 +69,10 @@ function AboutPage() {
             <div className="mt-9 flex flex-wrap gap-3">
               <ButtonLink to="/contact">
                 <Mail aria-hidden />
-                Entrer en contact
+                Me contacter
               </ButtonLink>
               <ButtonLink to="/projects" variant="outline">
-                Découvrez mon travail
+                Voir mes projets
               </ButtonLink>
             </div>
           </div>
@@ -72,7 +80,7 @@ function AboutPage() {
           <div className="overflow-hidden rounded-3xl border border-border shadow-paper">
             <img
               src={aboutImage}
-              alt="A wooden desk by a window with an open sketchbook, pencils and a small plant"
+              alt="Bureau de travail avec un carnet de croquis, des crayons et une plante"
               width={900}
               height={1100}
               loading="lazy"
@@ -84,7 +92,7 @@ function AboutPage() {
 
       <Section ariaLabelledby="skills-heading" className="paper border-y border-border">
         <Container>
-          <SectionHeading id="skills-heading" eyebrow="Skills" title="Where I'm strongest" />
+          <SectionHeading id="skills-heading" eyebrow="Compétences" title="Mon expertise" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {skills.map((skill, index) => (
               <Reveal key={skill.label} delay={index * 0.04} className="h-full">
@@ -115,9 +123,9 @@ function AboutPage() {
         <Container className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeading
             id="experience-heading"
-            eyebrow="Timeline"
-            title="Experience"
-            description="Six years between design studios, agencies and independent work."
+            eyebrow="Parcours"
+            title="Mon parcours"
+            description="Mon évolution, du développement Front-end vers le Product Design."
           />
           <Timeline entries={experience} />
         </Container>
@@ -125,7 +133,7 @@ function AboutPage() {
 
       <Section ariaLabelledby="tools-heading" className="paper border-t border-border">
         <Container>
-          <SectionHeading id="tools-heading" eyebrow="Toolbox" title="What I work with daily" />
+          <SectionHeading id="tools-heading" eyebrow="Outils" title="Mes outils" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {tools.map((group) => (
               <div key={group.group}>
