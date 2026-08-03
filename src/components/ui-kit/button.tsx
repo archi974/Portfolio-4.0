@@ -11,7 +11,7 @@ const buttonStyles = cva(
         primary:
           "bg-primary text-primary-foreground shadow-paper hover:-translate-y-0.5 hover:bg-ink",
         outline:
-          "border border-border bg-surface text-ink hover:-translate-y-0.5 hover:border-accent hover:shadow-paper",
+          "bg-surface text-ink glow-card hover:-translate-y-0.5",
         ghost: "text-ink-soft hover:bg-secondary hover:text-ink",
         accent:
           "bg-accent text-accent-foreground shadow-paper hover:-translate-y-0.5 hover:brightness-105",
