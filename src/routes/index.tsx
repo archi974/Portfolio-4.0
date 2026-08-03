@@ -5,7 +5,7 @@ import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { PageTransition } from "@/components/ui-kit/motion";
 
-const title = "Vincent K/BIDI — Product Designer, UX/UI & Front-end";
+const title = "Accueil - Vincent K/BIDI | Product Designer UX/UI & Développeur web front-end";
 const description =
   "Portfolio de Product Designer spécialisé en UX/UI et développement Front-end. De la recherche utilisateur au développement d'interfaces web avec React, Next.js et TypeScript.";
 

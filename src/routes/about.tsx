@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail } from "lucide-react";
 import aboutImage from "@/assets/about-desk.jpg";
+import aboutProfile from "@/assets/about-profile.jpg";
 import { Container, Section, SectionHeading } from "@/components/layouts/section";
 import { PageTransition, Reveal } from "@/components/ui-kit/motion";
 import { Timeline } from "@/components/ui-kit/timeline";
@@ -11,7 +12,7 @@ import { experience } from "@/data/experience";
 import { skills, tools } from "@/data/skills";
 import { person } from "@/data/navigation";
 
-const title = "À propos - Vincent K/BIDI | Product Designer & Développeur web front-end";
+const title = "À propos - Vincent K/BIDI | Product Designer UX/UI & Développeur web front-end";
 const description =
   "Découvrez mon parcours, mon approche du Product Design ainsi que mes compétences en UX/UI Design et développement Front-end.";
 
@@ -43,12 +44,12 @@ function AboutPage() {
               Je conçois des produits pensés pour les utilisateurs, conçu pour être développés.
             </h1>
             <span className="mt-3 flex flex-wrap gap-2 text-sm font-medium text-ink-faint sm:text-base">
-              <Tag>📍 Montpellier</Tag>
+              <Tag>📍 Hampteau</Tag>
               <Tag>🎓 Product Designer</Tag>
+              <Tag>🎨 UX/UI</Tag>
               <Tag>React</Tag>
               <Tag>Next.js</Tag>
               <Tag>TypeScript</Tag>
-              <Tag>🎨 UX/UI</Tag>
             </span>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-ink-soft sm:text-lg">
               <p>
@@ -79,8 +80,8 @@ function AboutPage() {
 
           <div className="overflow-hidden rounded-3xl border border-border shadow-paper">
             <img
-              src={aboutImage}
-              alt="Bureau de travail avec un carnet de croquis, des crayons et une plante"
+              src={aboutProfile}
+              alt="Portrait de Vincent K/BIDI, Product Designer UX/UI & Développeur web front-end"
               width={900}
               height={1100}
               loading="lazy"

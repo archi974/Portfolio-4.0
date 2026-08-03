@@ -6,7 +6,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { designProjects } from "@/data/projects-design";
 import { developmentProjects } from "@/data/projects-development";
 
-const title = "Projets — Product Design & Développement | Vincent K/BIDI";
+const title = "Projets - Vincent K/BIDI | Product Designer UX/UI & Développeur web front-end";
 const description =
   "Découvrez mes études de cas en Product Design (UX/UI) ainsi que mes projets de développement front-end réalisés avec React, Next.js et TypeScript.";
 

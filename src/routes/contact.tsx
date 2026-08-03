@@ -6,7 +6,7 @@ import { GlowCard } from "@/components/ui-kit/glow-card";
 import { socials } from "@/data/socials";
 import { person } from "@/data/navigation";
 
-const title = "Contact - Vincent | Product Designer UX/UI";
+const title = "Contact - Vincent K/BIDI | Product Designer UX/UI & Développeur web front-end";
 const description =
   "Vous avez un projet, une opportunité ou une question ? Contactez-moi pour échanger autour du Product Design, de l'UX/UI ou du développement Front-end.";
 
