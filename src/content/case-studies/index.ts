@@ -85,6 +85,28 @@ export const eventoriasCase: CaseStudy = {
         "Le résultat est un prototype mobile permettant de rechercher, consulter, créer et gérer des événements grâce à une interface claire, moderne et centrée sur les besoins des utilisateurs. Le projet est accompagné d'une documentation de passation destinée à faciliter le travail de l'équipe de développement.",
       ],
     },
+    {
+      id: "deliverables",
+      title: "Livrables",
+      body: [],
+      list: [
+        "Prototype",
+        "Veille",
+        "Micro-tests",
+        "Documentation de passation"
+      ],
+    },
+    {
+      id: "next-steps",
+      title: "Et ensuite ?",
+      body: [],
+      list: [
+        "Élargir l'échantillon utilisateur",
+        "Tester sur davantage d'appareils",
+        "Mesurer les KPI après lancement",
+        "Approfondir l'accessibilité"
+      ]
+    },
   ],
   results: [
     {

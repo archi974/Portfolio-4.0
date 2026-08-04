@@ -7,6 +7,7 @@ import { Tag } from "@/components/ui-kit/tag";
 import { getNextProject, getProject } from "@/lib/projects";
 import { person } from "@/data/navigation";
 import type { Project } from "@/types/project";
+import { ProcessCarousel } from "@/components/ui-kit/processCarousel";
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }): { project: Project; next: Project | undefined } => {
@@ -143,6 +144,13 @@ function CaseStudyPage() {
                     </div>
                   ))}
                 </dl>
+              </Container>
+            </Section>
+
+            <Section className="py-8">
+              <Container>
+                <h2 className="mb-6 text-2xl front-semibold sm:text-[1.75rem]">Démarche product Design</h2>
+                <ProcessCarousel />
               </Container>
             </Section>
 
