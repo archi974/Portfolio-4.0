@@ -7,6 +7,28 @@ export const eventoriasCase: CaseStudy = {
     { label: "Contexte", value: "Projet de formation OpenClassrooms" },
     { label: "Plateforme", value: "Application mobile (iOS & Android)" },
   ],
+  tools: [
+    {
+      title: "Figma",
+      description: "Maquettes haute fidélité",
+      icon: "figma"
+    },
+    {
+      title: "Notion",
+      description: "Veille et documentation",
+      icon: "notion"
+    },
+    {
+      title: "Figma Make",
+      description: "Prototypage assisté par IA",
+      icon: "figma"
+    },
+    {
+      title: "React",
+      description: "Prototype de l'application interactif",
+      icon: "react"
+    },
+  ],
   sections: [
     {
       id: "context",
@@ -90,9 +112,9 @@ export const eventoriasCase: CaseStudy = {
       title: "Livrables",
       body: [],
       list: [
-        "Prototype",
-        "Veille",
-        "Micro-tests",
+        "Prototype interactif de l'application",
+        "Veille UX/UI et benchmark",
+        "Compte rendu micro-tests",
         "Documentation de passation"
       ],
     },
@@ -116,14 +138,14 @@ export const eventoriasCase: CaseStudy = {
 
     },
     {
-      metric: "10+",
-      label: "Parcours utilisateurs",
-      note: "Visiteur et organisateur couverts par le prototype",
+      metric: "3",
+      label: "Micro-tests réalisés",
+      note: "Tests utilisateurs sur le prototype pour valider les parcours et l'ergonomie",
     },
     {
       metric: "1",
-      label: "Prototype interactif",
-      note: "Prototype haute fidélité réalisé sur Figma",
+      label: "Prototype interactif validé",
+      note: "Prototype haute fidélité réalisé avec Figma make et React",
     },
   ],
 
@@ -174,6 +196,28 @@ export const cafeCase: CaseStudy = {
     { label: "Durée", value: "6 semaines" },
     { label: "Contexte", value: "Projet de formation OpenClassrooms" },
     { label: "Livrables", value: "Personas, User Journey Maps, Service Blueprint" },
+  ],
+  tools: [
+    {
+      title: "Google Doc",
+      description: "Protocole, observation et guide d'entretien",
+      icon: "google"
+    },
+    {
+      title: "Notion",
+      description: "Plan de conception UX/UI",
+      icon: "figma"
+    },
+    {
+      title: "Miro",
+      description: "Restitution Atelier d'idéation",
+      icon: "miro"
+    },
+    {
+      title: "Figjam",
+      description: "Parcours utilisateur",
+      icon: "figma"
+    }
   ],
   sections: [
     {
@@ -243,11 +287,36 @@ export const cafeCase: CaseStudy = {
         "Cette démarche UX a permis de fournir une vision claire des besoins des utilisateurs et de proposer des solutions concrètes, centrées sur leurs attentes, afin d'améliorer durablement l'expérience au Café des Beaux-Arts.",
       ],
     },
+    {
+      id: "deliverables",
+      title: "Livrables",
+      body: [],
+      list: [
+        "Protocole de recherche",
+        "Grille d'observation",
+        "Guide d'entretien",
+        "Personas",
+        "Parcours utilisateurs",
+        "Restitution atelier d'idéation",
+        "Présentation finale"
+      ],
+    },
+    {
+      id: "next-steps",
+      title: "Et ensuite ?",
+      body: [],
+      list: [
+        "Élargir l'échantillon utilisateur",
+        "Tester sur davantage d'appareils",
+        "Mesurer les KPI après lancement",
+        "Approfondir l'accessibilité"
+      ]
+    },
   ],
   results: [
     { metric: "5", label: "Entretiens utilisateurs", note: "Profils variés pour comprendre les besoins et les points de friction" },
-    { metric: "2", label: "Personas", note: "Construits à partir de la recherche utilisateur" },
-    { metric: "4", label: "Livrables UX", note: "User Journey Maps, HMW, Service Blueprint et recommandations" },
+    { metric: "2", label: "Personas", note: "Identifier et réaliser à partir des entretiens et de l'observation de terrain" },
+    { metric: "6", label: "Participants à l'atelier", note: "Choisi pour varié les réponses aux problématiques défini" },
   ],
   learnings: [
     "Ce projet m'a confirmé l'importance de commencer par comprendre les utilisateurs avant de proposer des solutions.",
@@ -275,6 +344,18 @@ export const roadmapCase: CaseStudy = {
     { label: "Durée", value: "4 semaines" },
     { label: "Contexte", value: "Projet de formation OpenClassrooms" },
     { label: "Livrables", value: "Analyses UX, Roadmap, Recommandations" },
+  ],
+  tools: [
+    {
+      title: "Google Doc",
+      description: "Recommandation",
+      icon: "google"
+    },
+    {
+      title: "Notion",
+      description: "Analyse qualitative et quantitative",
+      icon: "notion"
+    },
   ],
   sections: [
     {

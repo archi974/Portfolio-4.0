@@ -149,8 +149,8 @@ function CaseStudyPage() {
 
             <Section className="py-8">
               <Container>
-                <h2 className="mb-6 text-2xl front-semibold sm:text-[1.75rem]">Démarche product Design</h2>
-                <ProcessCarousel />
+                <h2 className="mb-6 text-2xl front-semibold sm:text-[1.75rem]">Outils utilisés pendant ce projet</h2>
+                <ProcessCarousel items={study.tools} />
               </Container>
             </Section>
 

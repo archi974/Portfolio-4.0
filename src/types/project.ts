@@ -9,6 +9,7 @@ export type CaseSection = {
 
 export type CaseStudy = {
   overview: { label: string; value: string }[];
+  tools: { title: string; description: string; icon: string; }[];
   sections: CaseSection[];
   results: { metric: string; label: string; note: string }[];
   learnings: string[];
