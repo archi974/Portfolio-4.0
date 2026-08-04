@@ -195,7 +195,7 @@ export const cafeCase: CaseStudy = {
     { label: "Mon Rôle", value: "Recherche utilisateur, Design de service" },
     { label: "Durée", value: "6 semaines" },
     { label: "Contexte", value: "Projet de formation OpenClassrooms" },
-    { label: "Livrables", value: "Personas, User Journey Maps, Service Blueprint" },
+    { label: "Livrables", value: "Personas, User Journey Maps" },
   ],
   tools: [
     {
@@ -270,7 +270,7 @@ export const cafeCase: CaseStudy = {
       id: "process",
       title: "Processus UX",
       body: [
-        "Les résultats de la recherche ont permis de construire deux personas, deux User Journey Maps, un How Might We (HMW) et un Service Blueprint afin de visualiser l'expérience utilisateur et les interactions avec le service.",
+        "Les résultats de la recherche ont permis de construire deux personas, deux User Journey Maps et un How Might We (HMW) afin de visualiser l'expérience utilisateur et les interactions avec le service.",
       ],
     },
     {
@@ -325,8 +325,7 @@ export const cafeCase: CaseStudy = {
   ],
   gallery: [
     { caption: "Personas", alt: "Deux personas issus de la recherche utilisateur" },
-    { caption: "User Journey Maps", alt: "Visualisation du parcours utilisateur et des points de friction" },
-    { caption: "Service Blueprint & HMW", alt: "Service Blueprint et atelier How Might We utilisés pour identifier les opportunités de conception" },
+    { caption: "User Journey Maps et HMW", alt: "Visualisation du parcours utilisateur et des points de friction" },
   ],
   resources: [
     { label: "Protocole de recherche", href: "/Etude_UX_cafe_des_beaux_arts_1_protocole_de_recherche_062026.pdf" },
