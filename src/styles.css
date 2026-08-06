@@ -217,11 +217,11 @@
     padding: 3px;
     background: linear-gradient(
       115deg,
-      oklch(1 0 0 / 0) 0%,
-      oklch(1 0 0 / 0.9) 22%,
-      oklch(0.8076 0.1105 203.28) 50%,
-      oklch(1 0 0 / 0.9) 78%,
-      oklch(1 0 0 / 0) 100%
+      oklch(0.8076 0.1105 203.28 / 0) 0%,
+      oklch(0.8076 0.1105 203.28 / .15) 20%,
+      oklch(0.8076 0.1105 203.28 / .95) 50%,
+      oklch(0.8076 0.1105 203.28 / .15) 80%,
+      oklch(0.8076 0.1105 203.28 / 0) 100%
     );
     background-size: 300% 100%;
     background-position: 0% 50%;
