@@ -53,6 +53,27 @@ export const eventoriasCase: CaseStudy = {
       ],
     },
     {
+      id: "constraints",
+      title: "Contraintes",
+      body: [
+        "Le projet devait être réalisé individuellement dans le cadre de ma formation Product Designer, avec un temps limité et des livrables imposés. L'objectif était de couvrir l'ensemble du processus de conception, de la recherche utilisateur jusqu'à la préparation de la passation aux développeurs."
+      ],
+    },
+    {
+      id: "design-decisions",
+      title: "Décisions de conception",
+      body: [
+        "Les principaux choix de conception ont été guidés par les enseignements de la recherche utilisateur. L'interface a été pensée pour permettre une découverte rapide des événements, réduire le nombre d'étapes nécessaires à l'inscription et distinguer clairement les parcours des visiteurs et des organisateurs."
+      ],
+    },
+    {
+      id: "challenges",
+      title: "Défis rencontrés",
+      body: [
+        "La principale difficulté consistait à concevoir une expérience répondant simultanément aux besoins des visiteurs et des organisateurs sans complexifier l'interface. Cette problématique a été résolue en définissant des parcours distincts et en priorisant les fonctionnalités essentielles pour chaque profil."
+      ],
+    },
+    {
       id: "research",
       title: "Recherche utilisateur",
       body: [
@@ -242,6 +263,27 @@ export const cafeCase: CaseStudy = {
       ],
     },
     {
+      id: "constraints",
+      title: "Contraintes",
+      body: [
+        "Le projet devait être mené dans un délai limité en s'appuyant principalement sur des méthodes qualitatives. Les recommandations devaient être argumentées par les observations de terrain et les entretiens réalisés auprès des utilisateurs."
+      ],
+    },
+    {
+      id: "design-decisions",
+      title: "Décisions de conception",
+      body: [
+        "Les recommandations proposées ont été directement construites à partir des observations et des entretiens afin de répondre aux difficultés réellement rencontrées par les clients. Les livrables UX ont été sélectionnés pour faciliter la compréhension des parcours et des opportunités d'amélioration par les parties prenantes."
+      ],
+    },
+    {
+      id: "challenges",
+      title: "Défis rencontrés",
+      body: [
+        "Le principal défi était de transformer des observations parfois subjectives en recommandations concrètes et priorisées. La synthèse des données recueillies a permis de mettre en évidence les problématiques récurrentes et de proposer des solutions cohérentes."
+      ],
+    },
+    {
       id: "research",
       title: "Recherche utilisateur",
       body: [
@@ -328,9 +370,10 @@ export const cafeCase: CaseStudy = {
     { caption: "User Journey Maps et HMW", alt: "Visualisation du parcours utilisateur et des points de friction" },
   ],
   resources: [
-    { label: "Protocole de recherche", href: "/Etude_UX_cafe_des_beaux_arts_1_protocole_de_recherche_062026.pdf" },
-    { label: "Grille d'observation", href: "/Etude_UX_cafe_des_beaux_arts_2_grille_observation_062026.pdf" },
-    { label: "Guide d'entretien", href: "/Etude_UX_cafe_des_beaux_arts_3_guide_entretien_062026.pdf" },
+    { label: "Protocole de recherche", href: "/coffee/Protocole_de_recherche_Etude_UX_cafe_des_beaux_arts_1.pdf" },
+    { label: "Grille d'observation", href: "/coffee/Grille_observation_Etude_UX_cafe_des_beaux_arts_2.pdf" },
+    { label: "Guide d'entretien", href: "coffee/Guide_entretien_Etude_UX_cafe_des_beaux_arts_3.pdf" },
+    { label: "Personas", href: "coffee/Persona_1_Etude_UX_cafe_des_beaux_arts_4" },
     { label: "Journey map", href: "https://www.figma.com/board/YQxSVzCWVvMfOBRWFnPuop/Customer-Journey-Map--Community-?node-id=0-1&t=e7Qywqh1p1Nn8DEE-1" },
     { label: "Atelier d'idéation", href: "https://miro.com/app/board/uXjVHHjpdTg=/?embedMode=view_only_without_ToViewport%3D-1538,-452,3463,1684&embedId=190246243052" },
     { label: "Plan de conception UX/UI", href: "https://slender-singer-afe.notion.site/Plan-de-conception-UX-UI-23c72a437cfc834799e081c465502e81" },
@@ -376,6 +419,27 @@ export const roadmapCase: CaseStudy = {
       title: "Mon rôle",
       body: [
         "J'ai réalisé l'ensemble de la démarche : analyse des données, synthèse des résultats, priorisation des opportunités d'amélioration et élaboration de la Roadmap UX.",
+      ],
+    },
+    {
+      id: "constraints",
+      title: "Contraintes",
+      body: [
+        "Le projet devait s'appuyer sur des données existantes afin de produire une feuille de route réaliste. Les recommandations devaient être priorisées selon leur valeur pour les utilisateurs tout en restant réalisables dans un contexte produit."
+      ],
+    },
+    {
+      id: "design-decisions",
+      title: "Décisions de conception",
+      body: [
+        "Les décisions de priorisation ont été prises à partir de l'analyse croisée des données qualitatives et quantitatives. Les recommandations ont ensuite été organisées selon leur impact utilisateur et leur niveau de priorité afin de proposer une roadmap cohérente."
+      ],
+    },
+    {
+      id: "challenges",
+      title: "Défis rencontrés",
+      body: [
+        "La principale difficulté était de transformer un ensemble de données en décisions concrètes. Le croisement des analyses a permis d'identifier les améliorations les plus pertinentes et de construire une roadmap répondant aux besoins des utilisateurs."
       ],
     },
     {
@@ -433,6 +497,6 @@ export const roadmapCase: CaseStudy = {
     { label: "Analyse quantitatives", href: "https://hexagonal-ash-6cc.notion.site/Template-analyse-de-donn-es-quantitatives-35e71e1ab52980399d88ff0f28138139" },
     { label: "Tableau de croisement", href: "https://hexagonal-ash-6cc.notion.site/Tableau-de-croisement-35e71e1ab52980b09c38f5be5738818b" },
     { label: "Roadmap UX", href: "https://hexagonal-ash-6cc.notion.site/9ff71e1ab52982a4b49201c3bb821130?v=a8571e1ab52982a4a7c008ea6c63621a" },
-    { label: "Recommandations UX", href: "/Roadmap_recommandations_052026.pdf" },
+    { label: "Recommandations UX", href: "/roadmap/Roadmap_recommandations_052026.pdf" },
   ],
 };
