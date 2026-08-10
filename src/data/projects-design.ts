@@ -1,7 +1,7 @@
 import type { Project } from "@/types/project";
 import { cafeCase, eventoriasCase, roadmapCase } from "@/content/case-studies";
 import coverEventorias from "@/assets/cover-eventorias.jpg";
-import coverCafe from "@/assets/cover-cafe.jpg";
+import coverCafe from "@/assets/cover-cafe.png";
 import coverRoadmap from "@/assets/cover-roadmap.jpg";
 
 export const designProjects: Project[] = [

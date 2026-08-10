@@ -179,14 +179,38 @@ export const eventoriasCase: CaseStudy = {
   gallery: [
     {
       caption: "Accueil et découverte des événements",
+      ratio: "phone",
+      src: "/eventorias/home-page.png",
       alt: "Écran d'accueil de l'application Eventorias",
     },
     {
+      caption: "Information de détail d'un événement",
+      ratio: "phone",
+      src: "/eventorias/event-details.png",
+      alt: "Écran de détail d'un événement avec les informations essentielles",
+    },
+    {
       caption: "Recherche et filtres",
+      ratio: "phone",
+      src: "/eventorias/research-filter.png",
       alt: "Interface de recherche avec les différents filtres",
     },
     {
+      caption: "Information de profil et tickets",
+      ratio: "phone",
+      src: "/eventorias/profile.png",
+      alt: "Écran de profil utilisateur avec les tickets et événements créés",
+    },
+    {
+      caption: "Détails d'un ticket",
+      ratio: "phone",
+      src: "/eventorias/ticket.png",
+      alt: "Écran de détail d'un ticket avec les informations de l'événement et le QR code",
+    },
+    {
       caption: "Création et gestion d'un événement",
+      ratio: "phone",
+      src: "/eventorias/create-event.png",
       alt: "Parcours de création et de gestion d'un événement",
     },
   ],
@@ -366,8 +390,10 @@ export const cafeCase: CaseStudy = {
     "Transformer les enseignements de la recherche en livrables UX m'a permis de structurer des recommandations claires et directement exploitables.",
   ],
   gallery: [
-    { caption: "Personas", alt: "Deux personas issus de la recherche utilisateur" },
-    { caption: "User Journey Maps et HMW", alt: "Visualisation du parcours utilisateur et des points de friction" },
+    { caption: "User Journey Maps et HMW persona principal", ratio: "phone", src: "/coffee/persona_1.png", alt: "Visualisation du parcours utilisateur et des points de friction" },
+    { caption: "User Journey Maps et HMW persona secondaire", ratio: "phone", src: "/coffee/persona_2.png", alt: "Visualisation du parcours utilisateur et des points de friction" },
+    { caption: "Persona principal", ratio: "square", src: "/coffee/Persona_1_Etude_UX_cafe_des_beaux_arts_4.png", alt: "Le persona qui présente le plus de friction" },
+    { caption: "Persona secondaire", ratio: "square", src: "/coffee/Persona_2_Etude_UX_cafe_des_beaux_arts_5.png", alt: "Persona secondaire avec peu de friction" },
   ],
   resources: [
     { label: "Protocole de recherche", href: "/coffee/Protocole_de_recherche_Etude_UX_cafe_des_beaux_arts_1.pdf" },
@@ -488,9 +514,9 @@ export const roadmapCase: CaseStudy = {
     "Une Roadmap UX facilite la planification des évolutions en reliant les décisions de conception aux résultats de la recherche.",
   ],
   gallery: [
-    { caption: "Analyse qualitative", alt: "Synthèse des résultats de l'analyse qualitative" },
-    { caption: "Analyse quantitative", alt: "Résultats de l'analyse quantitative et tableau de croisement" },
-    { caption: "Roadmap UX", alt: "Roadmap UX présentant les recommandations priorisées" },
+    { caption: "", ratio: "", src: "", alt: "" },
+    { caption: "", ratio: "", src: "", alt: "" },
+    { caption: "", src: "", ratio: "", alt: "" },
   ],
   resources: [
     { label: "Analyse qualitative", href: "https://hexagonal-ash-6cc.notion.site/Template-Heuristiques-de-Nielsen-analyse-qualitative-35d71e1ab529801ea21af7254a282ba9" },

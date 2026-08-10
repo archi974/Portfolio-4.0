@@ -13,7 +13,7 @@ export type CaseStudy = {
   sections: CaseSection[];
   results: { metric: string; label: string; note: string }[];
   learnings: string[];
-  gallery: { caption: string; alt: string }[];
+  gallery: { caption: string; ratio: string; src:string; alt: string }[];
   resources: { label: string; href: string }[];
 };
 

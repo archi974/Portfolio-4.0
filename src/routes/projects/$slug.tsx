@@ -75,6 +75,7 @@ function CaseStudyPage() {
     next: Project | undefined;
   };
   const study = project.caseStudy;
+  // const gallery = study.gallery.filter((item) => item.src);
 
   return (
     <PageTransition>
@@ -131,142 +132,159 @@ function CaseStudyPage() {
         </Section>
 
         {study ? (
-          <>
-            <Section className="py-12">
-              <Container>
-                <dl className="grid gap-8 border-y border-border py-10 sm:grid-cols-2 lg:grid-cols-4">
-                  {study.overview.map((item) => (
-                    <div key={item.label}>
-                      <dt className="font-display text-xs font-semibold tracking-[0.18em] text-ink-faint uppercase">
-                        {item.label}
-                      </dt>
-                      <dd className="mt-2 text-sm leading-relaxed text-ink">{item.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </Container>
-            </Section>
+          (() => {
+            const gallery = study.gallery.filter((item) => item.src);
 
-            <Section className="py-8">
-              <Container>
-                <h2 className="mb-6 text-2xl front-semibold sm:text-[1.75rem]">Outils utilisés pendant ce projet</h2>
-                <ProcessCarousel items={study.tools} />
-              </Container>
-            </Section>
+            return (
 
-            <Section className="py-6">
-              <Container className="max-w-3xl">
-                {study.sections.map((section) => (
-                  <Reveal key={section.id} className="mb-16 last:mb-0">
-                    <section id={section.id} aria-labelledby={`${section.id}-title`}>
-                      <h2
-                        id={`${section.id}-title`}
-                        className="text-2xl font-semibold sm:text-[1.75rem]"
-                      >
-                        {section.title}
-                      </h2>
-                      <div className="mt-5 space-y-4">
-                        {section.body.map((paragraph) => (
-                          <p key={paragraph} className="text-base leading-[1.75] text-ink-soft">
-                            {paragraph}
-                          </p>
-                        ))}
-                      </div>
-                      {section.list ? (
-                        <ul className="mt-6 space-y-3 border-l-2 border-accent/50 pl-5">
-                          {section.list.map((item) => (
-                            <li key={item} className="text-base leading-relaxed text-ink-soft">
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      ) : null}
-                    </section>
-                  </Reveal>
-                ))}
-              </Container>
-            </Section>
+              <>
+                <Section className="py-12">
+                  <Container>
+                    <dl className="grid gap-8 border-y border-border py-10 sm:grid-cols-2 lg:grid-cols-4">
+                      {study.overview.map((item) => (
+                        <div key={item.label}>
+                          <dt className="font-display text-xs font-semibold tracking-[0.18em] text-ink-faint uppercase">
+                            {item.label}
+                          </dt>
+                          <dd className="mt-2 text-sm leading-relaxed text-ink">{item.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </Container>
+                </Section>
 
-            <Section ariaLabelledby="results-title" className="paper border-y border-border">
-              <Container>
-                <h2 id="results-title" className="text-2xl font-semibold sm:text-3xl">
-                  Résultats
-                </h2>
-                <div className="mt-10 grid gap-6 sm:grid-cols-3">
-                  {study.results.map((result) => (
-                    <GlowCard key={result.label} className="p-7">
-                      <p className="font-display text-3xl font-semibold text-primary">
-                        {result.metric}
-                      </p>
-                      <p className="mt-3 font-display text-sm font-semibold">{result.label}</p>
-                      <p className="mt-2 text-sm leading-relaxed text-ink-soft">{result.note}</p>
-                    </GlowCard>
-                  ))}
-                </div>
-              </Container>
-            </Section>
+                <Section className="py-8">
+                  <Container>
+                    <h2 className="mb-6 text-2xl front-semibold sm:text-[1.75rem]">Outils utilisés pendant ce projet</h2>
+                    <ProcessCarousel items={study.tools} />
+                  </Container>
+                </Section>
 
-            <Section ariaLabelledby="learnings-title">
-              <Container className="max-w-3xl">
-                <h2 id="learnings-title" className="text-2xl font-semibold sm:text-3xl">
-                  Principaux enseignements
-                </h2>
-                <ul className="mt-8 space-y-5">
-                  {study.learnings.map((item) => (
-                    <li key={item} className="flex gap-4">
-                      <span aria-hidden className="mt-2.5 size-1.5 shrink-0 rounded-full bg-accent" />
-                      <p className="text-base leading-relaxed text-ink-soft">{item}</p>
-                    </li>
-                  ))}
-                </ul>
-              </Container>
-            </Section>
-
-            <Section ariaLabelledby="gallery-title" className="pt-0">
-              <Container>
-                <h2 id="gallery-title" className="text-2xl font-semibold sm:text-3xl">
-                  Gallerie
-                </h2>
-                <div className="mt-10 grid gap-6 sm:grid-cols-3">
-                  {study.gallery.map((item) => (
-                    <figure key={item.caption}>
-                      <div className="aspect-4/3 overflow-hidden rounded-2xl border border-border bg-secondary">
-                        <img
-                          src={project.cover}
-                          alt={item.alt}
-                          width={1200}
-                          height={800}
-                          loading="lazy"
-                          className="size-full object-cover"
-                        />
-                      </div>
-                      <figcaption className="mt-3 text-sm text-ink-faint">{item.caption}</figcaption>
-                    </figure>
-                  ))}
-                </div>
-
-                {study.resources.length > 0 ? (
-                  <div className="mt-14">
-                    <h2 className="text-2xl font-semibold sm:text-3xl">Resources</h2>
-                    <ul className="mt-6 flex flex-wrap gap-3">
-                      {study.resources.map((resource) => (
-                        <li key={resource.label}>
-                          <a
-                            href={resource.href}
-                            target="_blank"
-                            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 font-display text-sm font-medium transition-colors duration-250 hover:border-accent"
+                <Section className="py-6">
+                  <Container className="max-w-3xl">
+                    {study.sections.map((section) => (
+                      <Reveal key={section.id} className="mb-16 last:mb-0">
+                        <section id={section.id} aria-labelledby={`${section.id}-title`}>
+                          <h2
+                            id={`${section.id}-title`}
+                            className="text-2xl font-semibold sm:text-[1.75rem]"
                           >
-                            <ExternalLink className="size-4" aria-hidden />
-                            {resource.label}
-                          </a>
+                            {section.title}
+                          </h2>
+                          <div className="mt-5 space-y-4">
+                            {section.body.map((paragraph) => (
+                              <p key={paragraph} className="text-base leading-[1.75] text-ink-soft">
+                                {paragraph}
+                              </p>
+                            ))}
+                          </div>
+                          {section.list ? (
+                            <ul className="mt-6 space-y-3 border-l-2 border-accent/50 pl-5">
+                              {section.list.map((item) => (
+                                <li key={item} className="text-base leading-relaxed text-ink-soft">
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          ) : null}
+                        </section>
+                      </Reveal>
+                    ))}
+                  </Container>
+                </Section>
+
+                <Section ariaLabelledby="results-title" className="paper border-y border-border">
+                  <Container>
+                    <h2 id="results-title" className="text-2xl font-semibold sm:text-3xl">
+                      Résultats
+                    </h2>
+                    <div className="mt-10 grid gap-6 sm:grid-cols-3">
+                      {study.results.map((result) => (
+                        <GlowCard key={result.label} className="p-7">
+                          <p className="font-display text-3xl font-semibold text-primary">
+                            {result.metric}
+                          </p>
+                          <p className="mt-3 font-display text-sm font-semibold">{result.label}</p>
+                          <p className="mt-2 text-sm leading-relaxed text-ink-soft">{result.note}</p>
+                        </GlowCard>
+                      ))}
+                    </div>
+                  </Container>
+                </Section>
+
+                <Section ariaLabelledby="learnings-title">
+                  <Container className="max-w-3xl">
+                    <h2 id="learnings-title" className="text-2xl font-semibold sm:text-3xl">
+                      Principaux enseignements
+                    </h2>
+                    <ul className="mt-8 space-y-5">
+                      {study.learnings.map((item) => (
+                        <li key={item} className="flex gap-4">
+                          <span aria-hidden className="mt-2.5 size-1.5 shrink-0 rounded-full bg-accent" />
+                          <p className="text-base leading-relaxed text-ink-soft">{item}</p>
                         </li>
                       ))}
                     </ul>
-                  </div>
-                ) : null}
-              </Container>
-            </Section>
-          </>
+                  </Container>
+                </Section>
+                <Section ariaLabelledby="gallery-title" className="pt-0">
+                  <Container>
+                    {gallery.length > 0 && (
+                      <>
+                        <h2 id="gallery-title" className="text-2xl font-semibold sm:text-3xl">
+                          Gallerie
+                        </h2>
+                        <div className="mt-10 grid gap-6 sm:grid-cols-3">
+                          {gallery.map((item) => (
+                            <figure key={item.caption}>
+                              <div
+                                className={`overflow-hidden rounded-2xl border border-border ${item.ratio === "phone"
+                                  ? "mx-auto max-w-[420px]"
+                                  : "bg-secondary"
+                                  }`}
+                              >
+                                <img
+                                  src={item.src}
+                                  alt={item.alt}
+                                  width={1200}
+                                  height={item.ratio === "phone" ? 2600 : 1200}
+                                  loading="lazy"
+                                  className={`w-full ${item.ratio === "phone"
+                                    ? "h-auto"
+                                    : "h-full object-cover"
+                                    }`}
+                                />
+                              </div>
+                              <figcaption className="mt-3 text-sm text-ink-faint">{item.caption}</figcaption>
+                            </figure>
+                          ))}
+                        </div>
+                      </>
+                    )}
+                    {study.resources.length > 0 ? (
+                      <div className="mt-14">
+                        <h2 className="text-2xl font-semibold sm:text-3xl">Resources</h2>
+                        <ul className="mt-6 flex flex-wrap gap-3">
+                          {study.resources.map((resource) => (
+                            <li key={resource.label}>
+                              <a
+                                href={resource.href}
+                                target="_blank"
+                                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 font-display text-sm font-medium transition-colors duration-250 hover:border-accent"
+                              >
+                                <ExternalLink className="size-4" aria-hidden />
+                                {resource.label}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                  </Container>
+                </Section>
+              </>
+            );
+          })()
         ) : null}
 
         <Section className="pt-0 pb-24">
