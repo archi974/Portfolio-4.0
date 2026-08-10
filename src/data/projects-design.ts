@@ -1,8 +1,8 @@
 import type { Project } from "@/types/project";
 import { cafeCase, eventoriasCase, roadmapCase } from "@/content/case-studies";
-import coverEventorias from "@/assets/cover-eventorias.jpg";
+import coverEventorias from "@/assets/cover-eventorias.png";
 import coverCafe from "@/assets/cover-cafe.png";
-import coverRoadmap from "@/assets/cover-roadmap.jpg";
+import coverRoadmap from "@/assets/cover-roadmap.png";
 
 export const designProjects: Project[] = [
   {
@@ -29,7 +29,7 @@ export const designProjects: Project[] = [
   },
   {
     slug: "cafe-des-beaux-arts",
-    title: "Étude UX – Café des Beaux-Arts",
+    title: "Café des Beaux-Arts",
     category: "design",
     year: "2026",
     summary: "Étude utilisateur visant à améliorer l'expérience client d'un café de quartier.",

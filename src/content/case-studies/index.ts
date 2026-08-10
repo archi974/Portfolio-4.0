@@ -406,123 +406,276 @@ export const cafeCase: CaseStudy = {
   ],
 };
 
+// export const roadmapCase: CaseStudy = {
+//   overview: [
+//     { label: "Mon Rôle", value: "Recherche UX, Analyse, Priorisation, Roadmap UX" },
+//     { label: "Durée", value: "4 semaines" },
+//     { label: "Contexte", value: "Projet de formation OpenClassrooms" },
+//     { label: "Livrables", value: "Analyses UX, Roadmap, Recommandations" },
+//   ],
+//   tools: [
+//     {
+//       title: "Google Doc",
+//       description: "Recommandation",
+//       icon: "google"
+//     },
+//     {
+//       title: "Notion",
+//       description: "Analyse qualitative et quantitative",
+//       icon: "notion"
+//     },
+//   ],
+//   sections: [
+//     {
+//       id: "context",
+//       title: "Contexte",
+//       body: [
+//         "Ce projet consistait à analyser l'expérience utilisateur d'un produit numérique afin d'identifier les principaux points de friction et de proposer une feuille de route d'amélioration priorisée.",
+//       ],
+//     },
+//     {
+//       id: "problem",
+//       title: "Problématique",
+//       body: [
+//         "L'objectif était de transformer les résultats des analyses qualitatives et quantitatives en recommandations concrètes, puis de définir les améliorations à mettre en œuvre selon leur impact utilisateur et leur priorité.",
+//       ],
+//     },
+//     {
+//       id: "role",
+//       title: "Mon rôle",
+//       body: [
+//         "J'ai réalisé l'ensemble de la démarche : analyse des données, synthèse des résultats, priorisation des opportunités d'amélioration et élaboration de la Roadmap UX.",
+//       ],
+//     },
+//     {
+//       id: "constraints",
+//       title: "Contraintes",
+//       body: [
+//         "Le projet devait s'appuyer sur des données existantes afin de produire une feuille de route réaliste. Les recommandations devaient être priorisées selon leur valeur pour les utilisateurs tout en restant réalisables dans un contexte produit."
+//       ],
+//     },
+//     {
+//       id: "design-decisions",
+//       title: "Décisions de conception",
+//       body: [
+//         "Les décisions de priorisation ont été prises à partir de l'analyse croisée des données qualitatives et quantitatives. Les recommandations ont ensuite été organisées selon leur impact utilisateur et leur niveau de priorité afin de proposer une roadmap cohérente."
+//       ],
+//     },
+//     {
+//       id: "challenges",
+//       title: "Défis rencontrés",
+//       body: [
+//         "La principale difficulté était de transformer un ensemble de données en décisions concrètes. Le croisement des analyses a permis d'identifier les améliorations les plus pertinentes et de construire une roadmap répondant aux besoins des utilisateurs."
+//       ],
+//     },
+//     {
+//       id: "research",
+//       title: "Recherche et analyse",
+//       body: [
+//         "Le travail s'est appuyé sur une analyse qualitative, une analyse quantitative et un tableau de croisement afin de consolider les observations et identifier les axes d'amélioration les plus pertinents.",
+//       ],
+//       list: [
+//         "Analyse qualitative",
+//         "Analyse quantitative",
+//         "Tableau de croisement",
+//         "Synthèse des enseignements",
+//       ],
+//     },
+//     {
+//       id: "insights",
+//       title: "Principaux enseignements",
+//       body: [
+//         "La confrontation des données qualitatives et quantitatives a permis de mettre en évidence les principaux points de friction du parcours utilisateur et les opportunités ayant le plus fort impact potentiel.",
+//       ],
+//     },
+//     {
+//       id: "process",
+//       title: "Priorisation",
+//       body: [
+//         "Les enseignements issus de la recherche ont été transformés en recommandations UX, puis organisés au sein d'une Roadmap afin de définir un ordre de mise en œuvre cohérent selon leur valeur pour les utilisateurs.",
+//       ],
+//     },
+//     {
+//       id: "solution",
+//       title: "Roadmap UX",
+//       body: [
+//         "Le projet aboutit à une Roadmap UX accompagnée de recommandations détaillées permettant de guider les futures évolutions du produit tout en s'appuyant sur les données recueillies lors des analyses.",
+//       ],
+//     },
+//   ],
+//   results: [
+//     { metric: "2", label: "Analyses réalisées", note: "Qualitative et quantitative" },
+//     { metric: "1", label: "Roadmap UX", note: "Priorisation des recommandations" },
+//     { metric: "1", label: "Document de recommandations", note: "Actions d'amélioration proposées" },
+//   ],
+//   learnings: [
+//     "Croiser des données qualitatives et quantitatives permet d'obtenir une vision plus fiable des problèmes rencontrés par les utilisateurs.",
+//     "Prioriser les recommandations aide à concentrer les efforts sur les améliorations offrant le plus de valeur.",
+//     "Une Roadmap UX facilite la planification des évolutions en reliant les décisions de conception aux résultats de la recherche.",
+//   ],
+//   gallery: [
+//     { caption: "", ratio: "", src: "", alt: "" },
+//     { caption: "", ratio: "", src: "", alt: "" },
+//     { caption: "", src: "", ratio: "", alt: "" },
+//   ],
+//   resources: [
+//     { label: "Analyse qualitative", href: "https://hexagonal-ash-6cc.notion.site/Template-Heuristiques-de-Nielsen-analyse-qualitative-35d71e1ab529801ea21af7254a282ba9" },
+//     { label: "Analyse quantitatives", href: "https://hexagonal-ash-6cc.notion.site/Template-analyse-de-donn-es-quantitatives-35e71e1ab52980399d88ff0f28138139" },
+//     { label: "Tableau de croisement", href: "https://hexagonal-ash-6cc.notion.site/Tableau-de-croisement-35e71e1ab52980b09c38f5be5738818b" },
+//     { label: "Roadmap UX", href: "https://hexagonal-ash-6cc.notion.site/9ff71e1ab52982a4b49201c3bb821130?v=a8571e1ab52982a4a7c008ea6c63621a" },
+//     { label: "Recommandations UX", href: "/roadmap/Roadmap_recommandations_052026.pdf" },
+//   ],
+// };
 export const roadmapCase: CaseStudy = {
   overview: [
-    { label: "Mon Rôle", value: "Recherche UX, Analyse, Priorisation, Roadmap UX" },
-    { label: "Durée", value: "4 semaines" },
-    { label: "Contexte", value: "Projet de formation OpenClassrooms" },
-    { label: "Livrables", value: "Analyses UX, Roadmap, Recommandations" },
+    {
+      label: "Mon rôle",
+      value: "Recherche UX, Analyse, Priorisation, Roadmap produit",
+    },
+    {
+      label: "Durée",
+      value: "4 semaines",
+    },
+    {
+      label: "Contexte",
+      value: "Projet de formation OpenClassrooms",
+    },
+    {
+      label: "Livrables",
+      value: "Analyses, Roadmap produit, Recommandations",
+    },
   ],
+
   tools: [
     {
       title: "Google Doc",
-      description: "Recommandation",
-      icon: "google"
+      description: "Document de recommandations",
+      icon: "google",
     },
     {
       title: "Notion",
-      description: "Analyse qualitative et quantitative",
-      icon: "notion"
+      description: "Analyses et Roadmap produit",
+      icon: "notion",
     },
   ],
+
   sections: [
     {
       id: "context",
       title: "Contexte",
       body: [
-        "Ce projet consistait à analyser l'expérience utilisateur d'un produit numérique afin d'identifier les principaux points de friction et de proposer une feuille de route d'amélioration priorisée.",
+        "J'ai travaillé sur Flowrate, un SaaS B2B de gestion du temps et de gestion de projet utilisé par des milliers d'équipes. La plateforme permet notamment de suivre le temps, gérer les projets et les tâches, analyser la productivité, facturer les clients et planifier les ressources.",
+        "L'équipe produit faisait face à un problème critique : seulement 14 % des utilisateurs terminaient l'onboarding après avoir cliqué sur « Commencer maintenant ».",
       ],
     },
+
     {
-      id: "problem",
-      title: "Problématique",
+      id: "objective",
+      title: "Objectif",
       body: [
-        "L'objectif était de transformer les résultats des analyses qualitatives et quantitatives en recommandations concrètes, puis de définir les améliorations à mettre en œuvre selon leur impact utilisateur et leur priorité.",
+        "Comprendre pourquoi les utilisateurs abandonnent l'onboarding en analysant les données disponibles, puis proposer des recommandations priorisées afin de construire une roadmap produit fondée sur des preuves.",
       ],
     },
+
     {
       id: "role",
       title: "Mon rôle",
       body: [
-        "J'ai réalisé l'ensemble de la démarche : analyse des données, synthèse des résultats, priorisation des opportunités d'amélioration et élaboration de la Roadmap UX.",
+        "J'ai réalisé l'analyse qualitative, l'analyse quantitative, le croisement des données, la priorisation des recommandations ainsi que la construction de la roadmap produit.",
       ],
     },
+
     {
       id: "constraints",
       title: "Contraintes",
       body: [
-        "Le projet devait s'appuyer sur des données existantes afin de produire une feuille de route réaliste. Les recommandations devaient être priorisées selon leur valeur pour les utilisateurs tout en restant réalisables dans un contexte produit."
+        "Le projet reposait exclusivement sur des données existantes. Les recommandations devaient être priorisées selon leur impact utilisateur et leur faisabilité afin d'accompagner les décisions de l'équipe produit.",
       ],
     },
-    {
-      id: "design-decisions",
-      title: "Décisions de conception",
-      body: [
-        "Les décisions de priorisation ont été prises à partir de l'analyse croisée des données qualitatives et quantitatives. Les recommandations ont ensuite été organisées selon leur impact utilisateur et leur niveau de priorité afin de proposer une roadmap cohérente."
-      ],
-    },
+
     {
       id: "challenges",
       title: "Défis rencontrés",
       body: [
-        "La principale difficulté était de transformer un ensemble de données en décisions concrètes. Le croisement des analyses a permis d'identifier les améliorations les plus pertinentes et de construire une roadmap répondant aux besoins des utilisateurs."
+        "Le principal défi consistait à transformer un volume important d'informations en décisions concrètes. Le croisement des analyses qualitatives et quantitatives a permis d'identifier les points de friction les plus critiques et de définir un ordre de priorité cohérent.",
       ],
     },
+
     {
-      id: "research",
-      title: "Recherche et analyse",
+      id: "process",
+      title: "Ma démarche",
       body: [
-        "Le travail s'est appuyé sur une analyse qualitative, une analyse quantitative et un tableau de croisement afin de consolider les observations et identifier les axes d'amélioration les plus pertinents.",
+        "Le travail s'est déroulé en plusieurs étapes, depuis l'analyse des données jusqu'à la construction de la roadmap produit.",
       ],
       list: [
         "Analyse qualitative",
         "Analyse quantitative",
-        "Tableau de croisement",
-        "Synthèse des enseignements",
+        "Croisement des données",
+        "Identification des principaux points de friction",
+        "Priorisation des recommandations",
+        "Construction de la roadmap produit",
       ],
     },
-    {
-      id: "insights",
-      title: "Principaux enseignements",
-      body: [
-        "La confrontation des données qualitatives et quantitatives a permis de mettre en évidence les principaux points de friction du parcours utilisateur et les opportunités ayant le plus fort impact potentiel.",
-      ],
-    },
-    {
-      id: "process",
-      title: "Priorisation",
-      body: [
-        "Les enseignements issus de la recherche ont été transformés en recommandations UX, puis organisés au sein d'une Roadmap afin de définir un ordre de mise en œuvre cohérent selon leur valeur pour les utilisateurs.",
-      ],
-    },
+
     {
       id: "solution",
-      title: "Roadmap UX",
+      title: "Résultat",
       body: [
-        "Le projet aboutit à une Roadmap UX accompagnée de recommandations détaillées permettant de guider les futures évolutions du produit tout en s'appuyant sur les données recueillies lors des analyses.",
+        "Cette démarche a permis de produire un document de recommandations ainsi qu'une roadmap produit priorisant les améliorations à apporter à l'onboarding afin de réduire les abandons et guider les futures évolutions de Flowrate.",
       ],
     },
   ],
+
   results: [
-    { metric: "2", label: "Analyses réalisées", note: "Qualitative et quantitative" },
-    { metric: "1", label: "Roadmap UX", note: "Priorisation des recommandations" },
-    { metric: "1", label: "Document de recommandations", note: "Actions d'amélioration proposées" },
+    {
+      metric: "2",
+      label: "Analyses réalisées",
+      note: "Qualitative et quantitative",
+    },
+    {
+      metric: "1",
+      label: "Roadmap produit",
+      note: "Priorisation des améliorations",
+    },
+    {
+      metric: "1",
+      label: "Document de recommandations",
+      note: "Actions proposées",
+    },
   ],
+
   learnings: [
-    "Croiser des données qualitatives et quantitatives permet d'obtenir une vision plus fiable des problèmes rencontrés par les utilisateurs.",
-    "Prioriser les recommandations aide à concentrer les efforts sur les améliorations offrant le plus de valeur.",
-    "Une Roadmap UX facilite la planification des évolutions en reliant les décisions de conception aux résultats de la recherche.",
+    "Croiser des données qualitatives et quantitatives permet de valider les problèmes UX avec davantage de confiance.",
+    "Prioriser les recommandations facilite la prise de décision produit en concentrant les efforts sur les améliorations à plus fort impact.",
+    "Une roadmap produit transforme les enseignements de la recherche en un plan d'action concret pour les équipes.",
   ],
+
   gallery: [
     { caption: "", ratio: "", src: "", alt: "" },
     { caption: "", ratio: "", src: "", alt: "" },
-    { caption: "", src: "", ratio: "", alt: "" },
+    { caption: "", ratio: "", src: "", alt: "" },
   ],
+
   resources: [
-    { label: "Analyse qualitative", href: "https://hexagonal-ash-6cc.notion.site/Template-Heuristiques-de-Nielsen-analyse-qualitative-35d71e1ab529801ea21af7254a282ba9" },
-    { label: "Analyse quantitatives", href: "https://hexagonal-ash-6cc.notion.site/Template-analyse-de-donn-es-quantitatives-35e71e1ab52980399d88ff0f28138139" },
-    { label: "Tableau de croisement", href: "https://hexagonal-ash-6cc.notion.site/Tableau-de-croisement-35e71e1ab52980b09c38f5be5738818b" },
-    { label: "Roadmap UX", href: "https://hexagonal-ash-6cc.notion.site/9ff71e1ab52982a4b49201c3bb821130?v=a8571e1ab52982a4a7c008ea6c63621a" },
-    { label: "Recommandations UX", href: "/roadmap/Roadmap_recommandations_052026.pdf" },
+    {
+      label: "Analyse qualitative",
+      href: "https://hexagonal-ash-6cc.notion.site/Template-Heuristiques-de-Nielsen-analyse-qualitative-35d71e1ab529801ea21af7254a282ba9",
+    },
+    {
+      label: "Analyse quantitative",
+      href: "https://hexagonal-ash-6cc.notion.site/Template-analyse-de-donn-es-quantitatives-35e71e1ab52980399d88ff0f28138139",
+    },
+    {
+      label: "Tableau de croisement",
+      href: "https://hexagonal-ash-6cc.notion.site/Tableau-de-croisement-35e71e1ab52980b09c38f5be5738818b",
+    },
+    {
+      label: "Roadmap produit",
+      href: "https://hexagonal-ash-6cc.notion.site/9ff71e1ab52982a4b49201c3bb821130?v=a8571e1ab52982a4a7c008ea6c63621a",
+    },
+    {
+      label: "Recommandations",
+      href: "/roadmap/Roadmap_recommandations_052026.pdf",
+    },
   ],
 };
