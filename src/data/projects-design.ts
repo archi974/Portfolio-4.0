@@ -105,3 +105,4 @@ export const designProjects: Project[] = [
     status: "coming-soon",
   },
 ];
+

@@ -4,6 +4,11 @@ import {
   SiReact,
   SiMiro,
   SiGoogle,
+  SiSass,
+  SiPostman,
+  SiExpress,
+  SiMongodb,
+  SiNodedotjs
 } from "react-icons/si";
 
 interface ProcessCarouselProps {
@@ -20,6 +25,11 @@ const icons = {
   google: SiGoogle,
   miro: SiMiro,
   react: SiReact,
+  sass: SiSass,
+  postman: SiPostman,
+  express: SiExpress,
+  mongodb: SiMongodb,
+  nodejs: SiNodedotjs,
 };
 
 export function ProcessCarousel({

@@ -75,7 +75,6 @@ function CaseStudyPage() {
     next: Project | undefined;
   };
   const study = project.caseStudy;
-  // const gallery = study.gallery.filter((item) => item.src);
 
   return (
     <PageTransition>

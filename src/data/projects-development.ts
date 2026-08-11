@@ -1,44 +1,45 @@
 import type { Project } from "@/types/project";
-import coverPortfolio from "@/assets/cover-portfolio.jpg";
-import coverUnsplash from "@/assets/cover-unsplash.jpg";
+import { kasaCase, oldBookCase } from "@/content/case-studies";
+import coverKasa from "@/assets/cover-portfolio.jpg";
+import coverBook from "@/assets/cover-old_book.jpg";
 
 export const developmentProjects: Project[] = [
   {
-    slug: "portfolio-website",
-    title: "Portfolio personnel",
+    slug: "kasa",
+    title: "Kasa",
     category: "development",
-    year: "2026",
-    summary: "Mon portfolio personnel, conçu pour présenter mes projets en Product Design et en développement.",
-    description:
-      "Développement d'un portfolio moderne avec Next.js et TypeScript, mettant en avant mes projets, mes compétences et mon parcours. Le site est conçu autour des bonnes pratiques en matière de performance, d'accessibilité, de SEO et de responsive design.",
+    year: "2023",
+    summary: "Développement d'une application web responsive de location immobilière à partir de maquettes Figma.",
+    description: "Développement du front-end de Kasa dans le cadre d'une refonte d'une application legacy vers React. L'application a été construite à partir de maquettes Figma responsives et de données JSON, avec une architecture basée sur des composants réutilisables, une navigation avec React Router et des interfaces interactives comme une galerie d'images et des sections dépliables.",
     tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "SEO",
-      "Accessibilité"
+      "React",
+      "React Router",
+      "Sass",
+      "JavaScript",
+      "Responsive Design"
     ],
-    cover: coverPortfolio,
-    coverAlt: "Aperçu du portfolio personnel sur ordinateur portable",
+    cover: coverKasa,
+    coverAlt: "Aperçu de l'application web Kasa",
     status: "published",
+    caseStudy: kasaCase
   },
   {
-    slug: "unsplash-collection",
-    title: "Unsplash Collection",
+    slug: "mon-vieux-grimoire",
+    title: "Mon Vieux Grimoire",
     category: "development",
-    year: "2026",
-    summary: "Application web permettant de rechercher et d'organiser des collections de photos.",
-    description:
-      "Projet développé avec Next.js et TypeScript mettant en œuvre une architecture propre, une séparation des responsabilités et une API dédiée pour gérer les collections d'images. L'objectif était de créer une application performante, évolutive et facile à maintenir.",
+    year: "2023",
+    summary: "Développement d'une API REST sécurisée pour une plateforme de référencement et de notation de livres.",
+    description: "Développement du back-end de Mon Vieux Grimoire et intégration avec une application React existante. Conception d'une API REST avec Node.js et Express, gestion et persistance des données avec MongoDB, mise en place de l'authentification et de la sécurisation des routes, gestion de l'ajout et de la notation des livres ainsi que optimisation des images envoyées par les utilisateurs.",
     tags: [
-      "Next.js",
-      "TypeScript",
-      "API",
-      "Architecture propre",
-      "MongoDB"
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "API REST",
+      "Sécurité"
     ],
-    cover: coverUnsplash,
-    coverAlt: "Interface de gestion de collections de photos",
+    cover: coverBook,
+    coverAlt: "Interface de la plateforme de notation de livres Mon Vieux Grimoire",
     status: "published",
+    caseStudy: oldBookCase
   },
 ];
