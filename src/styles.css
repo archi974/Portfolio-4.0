@@ -88,7 +88,8 @@
   --ring: oklch(0.8076 0.1105 203.28);
 
   /* Ombres */
-  --shadow-paper: 0 1px 2px oklch(0.2706 0.022 57.66 / 0.04), 0 12px 32px -18px oklch(0.2706 0.022 57.66 / 0.22);
+  /* --shadow-paper: 0 1px 2px oklch(0.2706 0.022 57.66 / 0.04), 0 12px 32px -18px oklch(0.2706 0.022 57.66 / 0.22); */
+  --shadow-paper: 0 0 0 1px oklch(0.2706 0.022 57.66 / 0.10), 0 8px 24px -12px oklch(0.2706 0.022 57.66 / 0.20);
   --shadow-lift: 0 2px 4px oklch(0.8076 0.1105 203.28 / 0.10), 0 26px 60px -28px oklch(0.8076 0.1105 203.28 / 0.42);
   --glow-accent: 0 0 0 1px oklch(0.8076 0.1105 203.28 / 0.25), 0 18px 60px -20px oklch(0.8076 0.1105 203.28 / 0.35);
 }
