@@ -27,18 +27,6 @@ export const services: Service[] = [
     ],
   },
   {
-    title: "UI Design",
-    description:
-      "Concevoir des interfaces cohérentes, accessibles et évolutives grâce à une approche basée sur les Design Systems.",
-    icon: PenTool,
-    items: [
-      "Design Systems",
-      "Accessibilité",
-      "Figma",
-      "Prototypage",
-    ],
-  },
-  {
     title: "Stratégie Produit",
     description:
       "Analyser les besoins utilisateurs et les objectifs business afin de prioriser les fonctionnalités et construire une vision produit claire.",
@@ -48,6 +36,18 @@ export const services: Service[] = [
       "Benchmark",
       "Stratégie",
       "Priorisation",
+    ],
+  },
+  {
+    title: "UI Design",
+    description:
+      "Concevoir des interfaces cohérentes, accessibles et évolutives grâce à une approche basée sur les Design Systems.",
+    icon: PenTool,
+    items: [
+      "Design Systems",
+      "Accessibilité",
+      "Figma",
+      "Prototypage",
     ],
   },
   {
