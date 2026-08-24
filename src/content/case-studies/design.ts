@@ -230,7 +230,7 @@ export const eventoriasCase: CaseStudy = {
     },
     {
       label: "Veille",
-      href: "https://app.notion.com/p/Inspirations-et-veille-5a072a437cfc83cdb00d8124f27a75ac",
+      href: "https://slender-singer-afe.notion.site/Template-Micro-test-d-usage-du-prototype-f1472a437cfc834da24701c6c6094fee",
     }
   ],
 };
