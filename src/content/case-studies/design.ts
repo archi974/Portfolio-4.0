@@ -217,12 +217,12 @@ export const eventoriasCase: CaseStudy = {
 
   resources: [
     {
-      label: "Prototype Figma",
-      href: "https://jv-design-et-tech.github.io/Prototype_event-app/",
-    },
-    {
       label: "Documentation de passation",
       href: "https://app.notion.com/p/Eventorias-App-Passation-aux-d-veloppeurs-bcf72a437cfc830abef3811a08281e68",
+    },
+    {
+      label: "Prototype Figma",
+      href: "https://jv-design-et-tech.github.io/Prototype_event-app/",
     },
     {
       label: "Micro-tests",
