@@ -407,6 +407,7 @@ export const cafeCase: CaseStudy = {
     { label: "Journey map", href: "https://www.figma.com/board/YQxSVzCWVvMfOBRWFnPuop/Customer-Journey-Map--Community-?node-id=0-1&t=e7Qywqh1p1Nn8DEE-1" },
     { label: "Atelier d'idéation", href: "https://miro.com/app/board/uXjVHHjpdTg=/?embedMode=view_only_without_ToViewport%3D-1538,-452,3463,1684&embedId=190246243052" },
     { label: "Plan de conception UX/UI", href: "https://slender-singer-afe.notion.site/Plan-de-conception-UX-UI-23c72a437cfc834799e081c465502e81" },
+    { label: "Diaporama", href: "https://canva.link/o0uddv7gpg8ymr8" },
   ],
 };
 
