@@ -221,8 +221,12 @@ export const eventoriasCase: CaseStudy = {
       href: "https://app.notion.com/p/Eventorias-App-Passation-aux-d-veloppeurs-bcf72a437cfc830abef3811a08281e68",
     },
     {
-      label: "Prototype Figma",
+      label: "Prototype finale",
       href: "https://jv-design-et-tech.github.io/Prototype_event-app/",
+    },
+    {
+      label: "Premier prototype",
+      href: "https://www.figma.com/design/Nk5gZyYh1YoqQQaQd5xbgK/Maquette-Eventorias?node-id=0-1&t=5m26MHfFjPYwDRzL-1",
     },
     {
       label: "Micro-tests",
