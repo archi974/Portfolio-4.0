@@ -402,8 +402,9 @@ export const cafeCase: CaseStudy = {
   resources: [
     { label: "Protocole de recherche", href: "/coffee/Protocole_de_recherche_Etude_UX_cafe_des_beaux_arts_1.pdf" },
     { label: "Grille d'observation", href: "/coffee/Grille_observation_Etude_UX_cafe_des_beaux_arts_2.pdf" },
-    { label: "Guide d'entretien", href: "coffee/Guide_entretien_Etude_UX_cafe_des_beaux_arts_3.pdf" },
-    { label: "Personas", href: "coffee/Persona_1_Etude_UX_cafe_des_beaux_arts_4" },
+    { label: "Guide d'entretien", href: "/coffee/Guide_entretien_Etude_UX_cafe_des_beaux_arts_3.pdf" },
+    { label: "Persona principal", href: "/coffee/Persona_1_Etude_UX_cafe_des_beaux_arts_4.png" },
+    { label: "Persona secondaire", href: "/coffee/Persona_2_Etude_UX_cafe_des_beaux_arts_5.png" },
     { label: "Journey map", href: "https://www.figma.com/board/YQxSVzCWVvMfOBRWFnPuop/Customer-Journey-Map--Community-?node-id=0-1&t=e7Qywqh1p1Nn8DEE-1" },
     { label: "Atelier d'idéation", href: "https://miro.com/app/board/uXjVHHjpdTg=/?embedMode=view_only_without_ToViewport%3D-1538,-452,3463,1684&embedId=190246243052" },
     { label: "Plan de conception UX/UI", href: "https://slender-singer-afe.notion.site/Plan-de-conception-UX-UI-23c72a437cfc834799e081c465502e81" },
