@@ -218,7 +218,7 @@ export const eventoriasCase: CaseStudy = {
   resources: [
     {
       label: "Documentation de passation",
-      href: "https://app.notion.com/p/Eventorias-App-Passation-aux-d-veloppeurs-bcf72a437cfc830abef3811a08281e68",
+      href: "https://slender-singer-afe.notion.site/Eventorias-App-Passation-aux-d-veloppeurs-bcf72a437cfc830abef3811a08281e68",
     },
     {
       label: "Prototype finale",
