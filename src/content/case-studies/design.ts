@@ -217,25 +217,25 @@ export const eventoriasCase: CaseStudy = {
 
   resources: [
     {
-      label: "Documentation de passation",
-      href: "https://slender-singer-afe.notion.site/Eventorias-App-Passation-aux-d-veloppeurs-bcf72a437cfc830abef3811a08281e68",
+      label: "Veille",
+      href: "https://slender-singer-afe.notion.site/Inspirations-et-veille-5a072a437cfc83cdb00d8124f27a75ac",
     },
     {
-      label: "Prototype finale",
-      href: "https://jv-design-et-tech.github.io/Prototype_event-app/",
+      label: "Micro-tests",
+      href: "https://slender-singer-afe.notion.site/Template-Micro-test-d-usage-du-prototype-f1472a437cfc834da24701c6c6094fee",
     },
     {
       label: "Premier prototype",
       href: "https://www.figma.com/design/Nk5gZyYh1YoqQQaQd5xbgK/Maquette-Eventorias?node-id=0-1&t=5m26MHfFjPYwDRzL-1",
     },
     {
-      label: "Micro-tests",
-      href: "https://app.notion.com/p/Template-Micro-test-d-usage-du-prototype-no-code-f1472a437cfc834da24701c6c6094fee",
+      label: "Prototype finale",
+      href: "https://jv-design-et-tech.github.io/Prototype_event-app/",
     },
     {
-      label: "Veille",
-      href: "https://slender-singer-afe.notion.site/Template-Micro-test-d-usage-du-prototype-f1472a437cfc834da24701c6c6094fee",
-    }
+      label: "Documentation de passation",
+      href: "https://slender-singer-afe.notion.site/Eventorias-App-Passation-aux-d-veloppeurs-bcf72a437cfc830abef3811a08281e68",
+    },
   ],
 };
 
